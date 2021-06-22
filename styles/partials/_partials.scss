@@ -1,6 +1,8 @@
 $horizontalPadding-desktop: 0 36px;
 $paddingTop-desktop: 48px;
 
+$horizontalPadding-mobile: 0 16px;
+$paddingTop-mobile: 24px;
 
 // Colors
 
@@ -20,17 +22,15 @@ $secondaryColor-3: #FAFAFA;
   max-width: 120px;
 }
 
-@mixin linkStyle {
-  text-decoration: none;
-  cursor: pointer;
-}
-
 @mixin buttonStyle {
-  padding: 0 32px; // Only for desktop
   height: 40px;
-  min-width: 150px;
+  width: 100%;
   border-radius: 0.4em;
   border: none;
+
+  &:hover {
+    background-color: $secondaryColor-1;
+  }
 }
 
 @mixin dividerLine {
@@ -57,4 +57,14 @@ $secondaryColor-3: #FAFAFA;
   max-height: 48px; // Only for desktop
   max-width: 48px; // Only for desktop
   border-radius: 50%;
+}
+
+
+// Styles for tablet
+
+@media (min-width: 768px) {
+  @mixin buttonStyle {
+    padding: 0 32px;
+    min-width: 150px;
+  }
 }
