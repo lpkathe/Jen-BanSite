@@ -1,0 +1,88 @@
+@import "./_partials";
+
+body, ul, .nav__links h3 {
+  margin: 0;
+}
+
+nav, a, footer, button {
+  color: $primaryColor-3;
+  background-color: $primaryColor-1;
+  text-decoration: none;
+}
+
+label {
+  padding: 4px;
+}
+
+.logo {
+  @include logoSize;
+  margin: 0;
+}
+
+
+// Fonts for mobile
+
+h1, h2 {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "bold";
+}
+
+h3 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "demi";
+}
+
+p {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "regular";
+}
+
+label, button {
+  font-size: 10px;
+  line-height: 20px;
+  font-family: "bold";
+}
+
+
+// Fonts for desktop
+
+@media (min-width: 768px) {
+
+  h1 {
+    font-size: 6em;
+    line-height: 6.8em;
+    font-family: "bold";
+  }
+  
+  h2 {
+    font-size: 3.6em;
+    line-height: 4.4em;
+    font-family: "bold";
+  }
+  
+  h3 {
+    font-size: 2.4em;
+    line-height: 3.2em;
+    font-family: "demi";
+  }
+  
+  p {
+    font-size: 1.4em;
+    line-height: 2.2em;
+    font-family: "regular";
+  }
+  
+  footer p {
+    font-size: 1.4em;
+    line-height: 2em;
+    font-family: "regular";
+  }
+  
+  button, label {
+    font-size: 1.2em;
+    font-family: "bold";
+  }
+}
