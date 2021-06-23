@@ -1,0 +1,90 @@
+$horizontalPadding-desktop: 0 36px;
+$paddingTop-desktop: 48px;
+
+$horizontalPadding-mobile: 0 16px;
+$paddingTop-mobile: 24px;
+
+// Colors
+
+$primaryColor-1: #323232;
+$primaryColor-2: #AFAFAF;
+$primaryColor-3: #ffffff;
+
+$secondaryColor-1: #000000;
+$secondaryColor-2: #E1E1E1;
+$secondaryColor-3: #FAFAFA;
+
+
+// General styles
+
+@mixin logoSize {
+  max-height: 20px;
+  max-width: 120px;
+}
+
+@mixin buttonStyle {
+  height: 40px;
+  width: 100%;
+  border-radius: 0.4em;
+  border: none;
+
+  &:hover {
+    background-color: $secondaryColor-1;
+  }
+}
+
+@mixin dividerLine {
+  border: 1px solid $secondary-color-2;
+}
+
+@mixin formField {
+  max-height: 48px; // Only for desktop
+  padding: 16px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid $secondaryColor-2;
+
+  &:active {
+    border-color: $primaryColor-1
+  }
+
+  &:invalid {
+    border-color: #d22d2d;
+  }
+}
+
+@mixin avatar {
+  max-height: 48px; // Only for desktop
+  max-width: 48px; // Only for desktop
+  border-radius: 50%;
+}
+
+
+// Typography
+
+@font-face {
+  font-family: "bold";
+  src: url(../../assets/Font/AvenirNextLTPro-Bold.otf) format("openType");
+  font-weight: 700;
+  }
+  
+  @font-face {
+    font-family: "demi";
+    src: url(../../assets/Font/AvenirNextLTPro-Demi.otf) format("openType");
+    font-weight: 600;
+  }
+  
+  @font-face {
+    font-family: "regular";
+    src: url(../../assets/Font/AvenirNextLTPro-Regular.otf) format("openType");
+    font-weight: 400;
+  }
+
+// Styles for tablet
+
+@media (min-width: 768px) {
+  @mixin buttonStyle {
+    padding: 0 32px;
+    min-width: 150px;
+  }
+}
