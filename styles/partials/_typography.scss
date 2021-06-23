@@ -1,20 +1,24 @@
+// Typography
+
 @font-face {
   font-family: "bold";
   src: url(../../assets/Font/AvenirNextLTPro-Bold.otf) format("openType");
   font-weight: 700;
 }
-
+  
 @font-face {
   font-family: "demi";
   src: url(../../assets/Font/AvenirNextLTPro-Demi.otf) format("openType");
   font-weight: 600;
 }
-
+  
 @font-face {
   font-family: "regular";
   src: url(../../assets/Font/AvenirNextLTPro-Regular.otf) format("openType");
   font-weight: 400;
 }
+
+// Fonts for mobile
 
 h1, h2 {
   font-size: 24px;
@@ -40,83 +44,43 @@ label, button {
   font-family: "bold";
 }
 
+
+// Fonts for tablet and desktop
+
 @media (min-width: 768px) {
+
   h1 {
     font-size: 6em;
     line-height: 6.8em;
     font-family: "bold";
   }
+  
   h2 {
     font-size: 3.6em;
     line-height: 4.4em;
     font-family: "bold";
   }
+  
   h3 {
     font-size: 2.4em;
     line-height: 3.2em;
     font-family: "demi";
   }
+  
   p {
     font-size: 1.4em;
     line-height: 2.2em;
     font-family: "regular";
   }
+  
   footer p {
     font-size: 1.4em;
     line-height: 2em;
     font-family: "regular";
   }
+  
   button, label {
     font-size: 1.2em;
     font-family: "bold";
   }
 }
-
-body, ul, .nav__links li {
-  margin: 0;
-}
-
-nav, a, footer, button {
-  color: #ffffff;
-  background-color: #323232;
-  text-decoration: none;
-}
-
-label {
-  padding: 4px;
-}
-
-.logo {
-  max-height: 20px;
-  max-width: 120px;
-  margin: 0;
-}
-
-.nav {
-  padding-top: 24px;
-  text-align: center;
-}
-
-.nav__links {
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-}
-
-.nav__links li {
-  padding: 16px 0;
-  height: 100%;
-  width: 50%;
-  display: inline-block;
-}
-
-.nav__links li:first-child {
-  border-bottom: 3px solid #ffffff;
-}
-
-.nav__links li:hover {
-  border-bottom: 3px solid #ffffff;
-}
-/*# sourceMappingURL=bio.css.map */

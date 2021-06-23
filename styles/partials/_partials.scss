@@ -1,3 +1,5 @@
+// General variables
+
 $horizontalPadding-desktop: 0 36px;
 $paddingTop-desktop: 48px;
 
@@ -38,7 +40,6 @@ $secondaryColor-3: #FAFAFA;
 }
 
 @mixin formField {
-  max-height: 48px; // Only for desktop
   padding: 16px;
   width: 100%;
   border-radius: 4px;
@@ -54,37 +55,25 @@ $secondaryColor-3: #FAFAFA;
 }
 
 @mixin avatar {
-  max-height: 48px; // Only for desktop
-  max-width: 48px; // Only for desktop
   border-radius: 50%;
 }
 
 
-// Typography
-
-@font-face {
-  font-family: "bold";
-  src: url(../../assets/Font/AvenirNextLTPro-Bold.otf) format("openType");
-  font-weight: 700;
-  }
-  
-  @font-face {
-    font-family: "demi";
-    src: url(../../assets/Font/AvenirNextLTPro-Demi.otf) format("openType");
-    font-weight: 600;
-  }
-  
-  @font-face {
-    font-family: "regular";
-    src: url(../../assets/Font/AvenirNextLTPro-Regular.otf) format("openType");
-    font-weight: 400;
-  }
-
 // Styles for tablet
 
 @media (min-width: 768px) {
+
   @mixin buttonStyle {
     padding: 0 32px;
     min-width: 150px;
+  }
+
+  @mixin formField {
+    max-height: 48px;
+  }
+
+  @mixin avatar {
+    max-height: 48px;
+    max-width: 48px;
   }
 }

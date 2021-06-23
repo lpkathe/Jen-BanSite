@@ -1,6 +1,6 @@
-@import "./partials/_global";
+@import "./partials/_typography";
 @import "./partials/_partials";
-@import "./partials/_typograhy";
+@import "./partials/_global";
 
 .nav {
   padding-top: $paddingTop-mobile;
@@ -9,8 +9,10 @@
   &__links{
     padding: 0;
     display: flex;
+    list-style: none;
+
     
-    & h3 {
+    & li {
       padding: 16px 0;
       height: 100%;
       width: 50%;
