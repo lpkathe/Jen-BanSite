@@ -1,0 +1,28 @@
+@import "./partials/_global";
+@import "./partials/_partials";
+@import "./partials/_typograhy";
+
+.nav {
+  padding-top: $paddingTop-mobile;
+  text-align: center;
+  
+  &__links{
+    padding: 0;
+    display: flex;
+    
+    & h3 {
+      padding: 16px 0;
+      height: 100%;
+      width: 50%;
+      display: inline-block;
+
+      &:first-child {
+        border-bottom: 3px solid $primaryColor-3;
+      } 
+      
+      &:hover {
+        border-bottom: 3px solid $primaryColor-3; 
+      }
+    }
+  }
+}
