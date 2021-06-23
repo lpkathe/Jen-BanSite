@@ -2,12 +2,6 @@
 @import "./partials/_partials";
 @import "./partials/_typograhy";
 
-.logo {
-  @include logoSize;
-  margin: 0;
-
-}
-
 .nav {
   padding-top: $paddingTop-mobile;
   text-align: center;
