@@ -19,7 +19,7 @@
 h1, h2 {
   font-size: 24px;
   line-height: 32px;
-  font-family: "bold";
+  font-family: "demi";
 }
 
 h3, li {
@@ -82,7 +82,7 @@ nav, a, footer, button {
   text-decoration: none;
 }
 
-article {
+article, footer {
   padding: 0 16px;
   padding-top: 24px;
 }
@@ -125,6 +125,50 @@ label {
   border-bottom: 3px solid #ffffff;
 }
 
+.footer {
+  padding-bottom: 2%;
+}
+
+.footer h2 {
+  margin-top: 0%;
+}
+
+.footer__icons {
+  width: 43%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__strongText {
+  font-family: "demi";
+}
+
+.footer div p {
+  margin-bottom: 0;
+}
+
+.footer div p:nth-child(even) {
+  margin-top: 0;
+}
+
+.footer__logo {
+  padding-top: 4rem;
+}
+
+.footer__license {
+  font-size: 11px;
+}
+
 .header {
   width: auto;
   color: #ffffff;
@@ -162,6 +206,7 @@ label {
 }
 
 .section3 {
+  padding-bottom: 16px;
   background-color: #E1E1E1;
 }
 

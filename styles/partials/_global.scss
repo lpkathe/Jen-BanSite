@@ -10,7 +10,7 @@ nav, a, footer, button {
   text-decoration: none;
 }
 
-article {
+article, footer {
   padding: $horizontalPadding-mobile;
   padding-top: $paddingTop-mobile;
 }
@@ -22,4 +22,65 @@ label {
 .logo {
   @include logoSize;
   margin: 0;
+}
+
+.nav {
+  padding-top: $paddingTop-mobile;
+  text-align: center;
+  
+  &__links{
+    padding: 0;
+    display: flex;
+    list-style: none;
+
+    
+    & li {
+      padding: 10px 0;
+      height: 100%;
+      width: 50%;
+      display: inline-block;
+
+      &:first-child {
+        border-bottom: 3px solid $primaryColor-3;
+      } 
+      
+      &:hover {
+        border-bottom: 3px solid $primaryColor-3; 
+      }
+    }
+  }
+}
+
+.footer {
+  padding-bottom: 2%;
+
+  & h2 {
+    margin-top: 0%;
+  }
+
+  &__icons {
+    width: 43%;
+    @include center;
+    justify-content: space-between;
+  }
+
+  &__strongText {
+    font-family: "demi";
+  }
+  
+  & div p {
+    margin-bottom: 0;
+
+    &:nth-child(even){
+      margin-top: 0;
+    }
+  }
+
+  &__logo {
+    padding-top: 4rem;
+  }
+
+  &__license {
+    font-size: 11px; // It is modified to be more similar to the mockup
+  }
 }

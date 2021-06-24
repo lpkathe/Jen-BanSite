@@ -2,33 +2,6 @@
 @import "./partials/_partials";
 @import "./partials/_global";
 
-.nav {
-  padding-top: $paddingTop-mobile;
-  text-align: center;
-  
-  &__links{
-    padding: 0;
-    display: flex;
-    list-style: none;
-
-    
-    & li {
-      padding: 10px 0;
-      height: 100%;
-      width: 50%;
-      display: inline-block;
-
-      &:first-child {
-        border-bottom: 3px solid $primaryColor-3;
-      } 
-      
-      &:hover {
-        border-bottom: 3px solid $primaryColor-3; 
-      }
-    }
-  }
-}
-
 .header {
   width: auto;
   color: $primaryColor-3;
@@ -69,6 +42,7 @@
 }
 
 .section3 {
+  padding-bottom: 16px;
   background-color: $secondaryColor-2;
   
   &__images img {
