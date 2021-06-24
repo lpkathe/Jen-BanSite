@@ -56,3 +56,13 @@
     z-index: 2;
   }  
 }
+
+.section1 {
+  padding: $horizontalPadding-mobile;
+  padding-top: $paddingTop-mobile;
+
+  &__image{
+    height: 55vh;
+  }
+}
+
