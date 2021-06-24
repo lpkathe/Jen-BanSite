@@ -106,7 +106,7 @@ label {
 }
 
 .nav__links li {
-  padding: 16px 0;
+  padding: 10px 0;
   height: 100%;
   width: 50%;
   display: inline-block;
@@ -118,5 +118,33 @@ label {
 
 .nav__links li:hover {
   border-bottom: 3px solid #ffffff;
+}
+
+.header {
+  width: auto;
+  color: #ffffff;
+  position: relative;
+}
+
+.header__image {
+  width: 100%;
+}
+
+.header__overlay {
+  top: -5px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 50%;
+  background-color: #323232;
+  position: absolute;
+  z-index: 1;
+}
+
+.header__title {
+  top: 35%;
+  left: 5%;
+  position: absolute;
+  z-index: 2;
 }
 /*# sourceMappingURL=bio.css.map */
