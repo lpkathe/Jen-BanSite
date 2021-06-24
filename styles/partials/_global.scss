@@ -1,6 +1,6 @@
 @import "./_partials";
 
-body, ul, .nav__links li, h3, .section3 h2 {
+body, ul, .nav__links li, h3, .section3 h2, .logo {
   margin: 0;
 }
 
@@ -20,8 +20,8 @@ label {
 }
 
 .logo {
-  @include logoSize;
-  margin: 0;
+  max-height: 20px;
+  max-width: 120px;
 }
 
 .nav {
@@ -33,13 +33,11 @@ label {
     display: flex;
     list-style: none;
 
-    
     & li {
       padding: 10px 0;
-      height: 100%;
       width: 50%;
       display: inline-block;
-
+      
       &:first-child {
         border-bottom: 3px solid $primaryColor-3;
       } 
@@ -47,6 +45,14 @@ label {
       &:hover {
         border-bottom: 3px solid $primaryColor-3; 
       }
+    }
+
+    &--active {
+      font-weight: bold;
+    }
+    
+    &--inactive {
+    color: $secondaryColor-2;
     }
   }
 }
@@ -84,3 +90,82 @@ label {
     font-size: 11px; // It is modified to be more similar to the mockup
   }
 }
+
+@media (min-width: 768px) {
+
+  article, footer {
+    padding: $horizontalPadding-tablet;
+    padding-top: $paddingTop-tablet;
+  }
+
+  .logo {
+    margin: 4%;
+  }
+
+  .nav {
+    padding-top: 0;
+    flex-direction: row;
+    display: flex;
+      
+    &__links {
+      width: 30%;
+      justify-content: space-around;
+
+      & li {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+      }
+    }
+  } 
+}
+  
+  .footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    &__title {
+        margin: 0;
+        line-height: 1em;
+        font-size: 2.7em;
+        width: fit-content;
+        display: inline-block;
+    }
+    
+    &__text {
+      margin-top:2%;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      display: flex;
+      font-size: 0.8em;
+    }
+    
+    &__logo {
+      top: 5.5em;
+      right: 5em;
+      position: absolute;
+    }
+    
+    &__copyright {
+      font-size: 1em;
+    }
+    
+    &__icons {
+      margin: 0 0 0 5%;
+      width: 25%;
+      display: inline-flex;
+      font-size: 1.7em;
+    }
+
+    &__info {
+      margin-right: 7%;
+    }
+
+    &__social-network {
+      width: 42%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  }

@@ -1,7 +1,7 @@
 // General variables
 
-$horizontalPadding-desktop: 0 36px;
-$paddingTop-desktop: 48px;
+$horizontalPadding-tablet: 0 36px;
+$paddingTop-tablet: 48px;
 
 $horizontalPadding-mobile: 0 16px;
 $paddingTop-mobile: 24px;
@@ -18,11 +18,6 @@ $secondaryColor-3: #FAFAFA;
 
 
 // General styles
-
-@mixin logoSize {
-  max-height: 20px;
-  max-width: 120px;
-}
 
 @mixin buttonStyle {
   height: 40px;

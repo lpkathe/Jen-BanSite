@@ -33,7 +33,7 @@
 .section1__container {
   
   & img {
-    height: 55vh;
+    width: 100%;
   }
 
   & h3 {
@@ -44,9 +44,90 @@
 .section3 {
   padding-bottom: 16px;
   background-color: $secondaryColor-2;
+
+  & h2 {
+    padding-bottom: 0.5rem;
+  }
   
   &__images img {
     padding: 0.3rem 0;
     width: 100%;
+  }
+}
+
+// Tablet meria query
+
+@media(min-width:768px){ 
+     
+  .header{
+      height: 45em;
+
+      &__title {
+      }
+
+      &__image {
+      }
+  }
+
+  .section1{
+      &__column {
+          margin: 0 auto;
+          width: 87%;
+      }
+
+      &__image {
+          height: 30em;
+      }
+
+      &__text { // Se modifica para mayor similitud con el mockup
+          word-spacing: 0;
+          font-size: 2em;
+          line-height: 1.5em;
+
+          &:last-child {
+              font-size: 1.8em;
+              font-weight: lighter;
+          }
+      }
+  }
+
+  .section2{
+      margin: 0 auto;
+      width: 80%;
+
+      &__title {
+          margin-left: 0.4em;
+      }
+
+      &__text {
+          display: flex;
+      }
+
+      &__paragraph {
+          margin: 1em;
+      }
+  }
+
+  .section3 {
+      margin-top: 0;
+      padding-bottom: 5.6em;
+      
+      &__title {
+          margin: 0 3%;
+          padding-top: 0;
+          height: inherit;
+      }
+      
+      &__gallery {
+          margin: 0 auto;
+          text-align: center;
+      }
+      
+      &__img {
+          padding: 1% 1% 0.5%;
+          width: 30%;
+          display: inline-block;
+          text-align: center;
+      }
   }
 }
