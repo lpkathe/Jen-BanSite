@@ -57,12 +57,22 @@
   }  
 }
 
-.section1 {
-  padding: $horizontalPadding-mobile;
-  padding-top: $paddingTop-mobile;
-
-  &__image{
+.section1__container {
+  
+  & img {
     height: 55vh;
+  }
+
+  & h3 {
+    margin-top: 0.5rem;
   }
 }
 
+.section3 {
+  background-color: $secondaryColor-2;
+  
+  &__images img {
+    padding: 0.3rem 0;
+    width: 100%;
+  }
+}

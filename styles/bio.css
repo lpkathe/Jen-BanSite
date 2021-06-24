@@ -72,7 +72,7 @@ label, button {
   }
 }
 
-body, ul, .nav__links li, .section1__title {
+body, ul, .nav__links li, h3, .section3 h2 {
   margin: 0;
 }
 
@@ -80,6 +80,11 @@ nav, a, footer, button {
   color: #ffffff;
   background-color: #323232;
   text-decoration: none;
+}
+
+article {
+  padding: 0 16px;
+  padding-top: 24px;
 }
 
 label {
@@ -148,12 +153,20 @@ label {
   z-index: 2;
 }
 
-.section1 {
-  padding: 0 16px;
-  padding-top: 24px;
+.section1__container img {
+  height: 55vh;
 }
 
-.section1__image {
-  height: 55vh;
+.section1__container h3 {
+  margin-top: 0.5rem;
+}
+
+.section3 {
+  background-color: #E1E1E1;
+}
+
+.section3__images img {
+  padding: 0.3rem 0;
+  width: 100%;
 }
 /*# sourceMappingURL=bio.css.map */

@@ -1,6 +1,6 @@
 @import "./_partials";
 
-body, ul, .nav__links li, .section1__title {
+body, ul, .nav__links li, h3, .section3 h2 {
   margin: 0;
 }
 
@@ -8,6 +8,11 @@ nav, a, footer, button {
   color: $primaryColor-3;
   background-color: $primaryColor-1;
   text-decoration: none;
+}
+
+article {
+  padding: $horizontalPadding-mobile;
+  padding-top: $paddingTop-mobile;
 }
 
 label {
