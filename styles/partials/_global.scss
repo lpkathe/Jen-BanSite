@@ -25,12 +25,12 @@ footer {
 }
 
 label {
-  padding: 4px;
+  padding: 0.4em;
 }
 
 .logo {
-  max-height: 20px;
-  max-width: 120px;
+  max-height: 2em;
+  max-width: 12em;
 }
 
 .nav {
@@ -50,11 +50,11 @@ label {
       z-index: 3;
 
       &:first-child {
-        border-bottom: 3px solid $primaryColor-3;
+        border-bottom: 0.3em solid $primaryColor-3;
       }
 
       &:hover {
-        border-bottom: 3px solid $primaryColor-3;
+        border-bottom: 0.3em solid $primaryColor-3;
       }
     }
 
@@ -98,7 +98,7 @@ label {
   }
 
   &__license {
-    font-size: 11px; // It is modified to be more similar to the mockup
+    font-size: 1.1em; // It is modified to be more similar to the mockup
   }
 }
 
@@ -192,6 +192,36 @@ label {
 
     &__links {
       width: 20%;
+    }
+  }
+
+  .footer {
+    & h2 {
+      font-size: 4.6em;
+    }
+
+    &__icons {
+      width: 13%;
+
+      & a {
+        height: fit-content;
+
+        & img {
+          height: 1.8em;
+        }
+      }
+    }
+
+    &__text {
+      width: 73%;
+    }
+
+    &__logo {
+      top: -2em;
+    }
+
+    &__license {
+      margin-top: 6em;
     }
   }
 }

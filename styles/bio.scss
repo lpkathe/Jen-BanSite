@@ -12,7 +12,7 @@
   }
 
   &__overlay {
-    top: -3px;
+    top: -0.3em;
     left: 0;
     height: 100%;
     width: 100%;
@@ -41,7 +41,7 @@
 }
 
 .section3 {
-  padding-bottom: 16px;
+  padding-bottom: 1.6em;
   background-color: $secondaryColor-2;
 
   & h2 {
@@ -59,7 +59,7 @@
 @media (min-width: 768px) {
   .header {
     &__overlay {
-      top: -4px;
+      top: -0.4em;
     }
 
     &__title {

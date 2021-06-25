@@ -1,26 +1,25 @@
 // General variables
 
-$horizontalPadding-tablet: 0 36px;
-$paddingTop-tablet: 48px;
+$horizontalPadding-tablet: 0 3.6em;
+$paddingTop-tablet: 4.8em;
 
-$horizontalPadding-mobile: 0 16px;
-$paddingTop-mobile: 24px;
+$horizontalPadding-mobile: 0 1.6em;
+$paddingTop-mobile: 2.4em;
 
 // Colors
 
 $primaryColor-1: #323232;
-$primaryColor-2: #AFAFAF;
+$primaryColor-2: #afafaf;
 $primaryColor-3: #ffffff;
 
 $secondaryColor-1: #000000;
-$secondaryColor-2: #E1E1E1;
-$secondaryColor-3: #FAFAFA;
-
+$secondaryColor-2: #e1e1e1;
+$secondaryColor-3: #fafafa;
 
 // General styles
 
 @mixin buttonStyle {
-  height: 40px;
+  height: 4em;
   width: 100%;
   border-radius: 0.4em;
   border: none;
@@ -31,17 +30,17 @@ $secondaryColor-3: #FAFAFA;
 }
 
 @mixin dividerLine {
-  border: 1px solid $secondary-color-2;
+  border: 0.1em solid $secondary-color-2;
 }
 
 @mixin formField {
-  padding: 16px;
+  padding: 1.6em;
   width: 100%;
-  border-radius: 4px;
-  border: 1px solid $secondaryColor-2;
+  border-radius: 0.4em;
+  border: 0.1em solid $secondaryColor-2;
 
   &:active {
-    border-color: $primaryColor-1
+    border-color: $primaryColor-1;
   }
 
   &:invalid {
@@ -59,22 +58,20 @@ $secondaryColor-3: #FAFAFA;
   align-items: center;
 }
 
-
 // Styles for tablet
 
 @media (min-width: 768px) {
-
   @mixin buttonStyle {
-    padding: 0 32px;
-    min-width: 150px;
+    padding: 0 3.2em;
+    min-width: 15em;
   }
 
   @mixin formField {
-    max-height: 48px;
+    max-height: 4.8em;
   }
 
   @mixin avatar {
-    max-height: 48px;
-    max-width: 48px;
+    max-height: 4.8em;
+    max-width: 4.8em;
   }
 }
