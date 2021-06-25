@@ -16,13 +16,19 @@
   font-weight: 400;
 }
 
-h1, h2 {
+html {
+  font-size: 10px;
+}
+
+h1,
+h2 {
   font-size: 24px;
   line-height: 32px;
   font-family: "demi";
 }
 
-h3, li {
+h3,
+li {
   font-size: 14px;
   line-height: 22px;
   font-family: "demi";
@@ -34,7 +40,8 @@ p {
   font-family: "regular";
 }
 
-label, button {
+label,
+button {
   font-size: 10px;
   line-height: 20px;
   font-family: "bold";
@@ -66,23 +73,33 @@ label, button {
     line-height: 2em;
     font-family: "regular";
   }
-  button, label {
+  button,
+  label {
     font-size: 1.2em;
     font-family: "bold";
   }
 }
 
-body, ul, .nav__links li, h3, .section3 h2, .logo {
+body,
+ul,
+.nav__links li,
+h3,
+.section3 h2,
+.logo {
   margin: 0;
 }
 
-nav, a, footer, button {
+nav,
+a,
+footer,
+button {
   color: #ffffff;
   background-color: #323232;
   text-decoration: none;
 }
 
-article, footer {
+article,
+footer {
   padding: 0 16px;
   padding-top: 24px;
 }
@@ -113,6 +130,8 @@ label {
   padding: 10px 0;
   width: 50%;
   display: inline-block;
+  position: relative;
+  z-index: 3;
 }
 
 .nav__links li:first-child {
@@ -176,7 +195,8 @@ label {
 }
 
 @media (min-width: 768px) {
-  article, footer {
+  article,
+  footer {
     padding: 0 36px;
     padding-top: 48px;
   }
@@ -289,7 +309,7 @@ label {
 }
 
 .header__overlay {
-  top: -5px;
+  top: -3px;
   left: 0;
   height: 100%;
   width: 100%;
@@ -329,8 +349,11 @@ label {
 }
 
 @media (min-width: 768px) {
-  .header {
-    height: 45em;
+  .header__overlay {
+    top: -4px;
+  }
+  .header__title {
+    top: 0%;
   }
   .section1__column {
     margin: 0 auto;

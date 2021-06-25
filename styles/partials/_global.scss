@@ -1,16 +1,25 @@
 @import "./_partials";
 
-body, ul, .nav__links li, h3, .section3 h2, .logo {
+body,
+ul,
+.nav__links li,
+h3,
+.section3 h2,
+.logo {
   margin: 0;
 }
 
-nav, a, footer, button {
+nav,
+a,
+footer,
+button {
   color: $primaryColor-3;
   background-color: $primaryColor-1;
   text-decoration: none;
 }
 
-article, footer {
+article,
+footer {
   padding: $horizontalPadding-mobile;
   padding-top: $paddingTop-mobile;
 }
@@ -27,8 +36,8 @@ label {
 .nav {
   padding-top: $paddingTop-mobile;
   text-align: center;
-  
-  &__links{
+
+  &__links {
     padding: 0;
     display: flex;
     list-style: none;
@@ -37,22 +46,24 @@ label {
       padding: 10px 0;
       width: 50%;
       display: inline-block;
-      
+      position: relative;
+      z-index: 3;
+
       &:first-child {
         border-bottom: 3px solid $primaryColor-3;
-      } 
-      
+      }
+
       &:hover {
-        border-bottom: 3px solid $primaryColor-3; 
+        border-bottom: 3px solid $primaryColor-3;
       }
     }
 
     &--active {
       font-weight: bold;
     }
-    
+
     &--inactive {
-    color: $secondaryColor-2;
+      color: $secondaryColor-2;
     }
   }
 }
@@ -73,11 +84,11 @@ label {
   &__strongText {
     font-family: "demi";
   }
-  
+
   & div p {
     margin-bottom: 0;
 
-    &:nth-child(even){
+    &:nth-child(even) {
       margin-top: 0;
     }
   }
@@ -92,8 +103,8 @@ label {
 }
 
 @media (min-width: 768px) {
-
-  article, footer {
+  article,
+  footer {
     padding: $horizontalPadding-tablet;
     padding-top: $paddingTop-tablet;
   }
@@ -106,7 +117,7 @@ label {
     padding-top: 0;
     flex-direction: row;
     display: flex;
-      
+
     &__links {
       width: 30%;
       justify-content: space-around;
@@ -117,55 +128,55 @@ label {
         align-items: center;
       }
     }
-  } 
-}
-  
-  .footer {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    
-    &__title {
-        margin: 0;
-        line-height: 1em;
-        font-size: 2.7em;
-        width: fit-content;
-        display: inline-block;
-    }
-    
-    &__text {
-      margin-top:2%;
-      margin-bottom: 0;
-      padding-bottom: 0;
-      display: flex;
-      font-size: 0.8em;
-    }
-    
-    &__logo {
-      top: 5.5em;
-      right: 5em;
-      position: absolute;
-    }
-    
-    &__copyright {
-      font-size: 1em;
-    }
-    
-    &__icons {
-      margin: 0 0 0 5%;
-      width: 25%;
-      display: inline-flex;
-      font-size: 1.7em;
-    }
-
-    &__info {
-      margin-right: 7%;
-    }
-
-    &__social-network {
-      width: 42%;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
   }
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin: 0;
+    line-height: 1em;
+    font-size: 2.7em;
+    width: fit-content;
+    display: inline-block;
+  }
+
+  &__text {
+    margin-top: 2%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    display: flex;
+    font-size: 0.8em;
+  }
+
+  &__logo {
+    top: 5.5em;
+    right: 5em;
+    position: absolute;
+  }
+
+  &__copyright {
+    font-size: 1em;
+  }
+
+  &__icons {
+    margin: 0 0 0 5%;
+    width: 25%;
+    display: inline-flex;
+    font-size: 1.7em;
+  }
+
+  &__info {
+    margin-right: 7%;
+  }
+
+  &__social-network {
+    width: 42%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
