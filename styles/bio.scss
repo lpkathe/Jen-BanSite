@@ -84,4 +84,26 @@
       }
     }
   }
+
+  .section2 {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 2em;
+
+    & h3 {
+      line-height: 2.2em;
+    }
+
+    & div {
+      display: flex;
+
+      p {
+        line-height: 1.5em;
+
+        &:first-child {
+          margin-right: 2.1em;
+        }
+      }
+    }
+  }
 }

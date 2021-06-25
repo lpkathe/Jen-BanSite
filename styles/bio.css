@@ -373,5 +373,24 @@ label {
     font-family: "regular";
     font-size: 1.5em;
   }
+  .section2 {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 2em;
+  }
+  .section2 h3 {
+    line-height: 2.2em;
+  }
+  .section2 div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .section2 div p {
+    line-height: 1.5em;
+  }
+  .section2 div p:first-child {
+    margin-right: 2.1em;
+  }
 }
 /*# sourceMappingURL=bio.css.map */
