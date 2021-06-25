@@ -200,6 +200,11 @@ label {
     padding: 0 36px;
     padding-top: 48px;
   }
+  .section1 h2 {
+    margin-top: 0;
+    line-height: 1.4em;
+    font-family: "demi";
+  }
   .logo {
     margin: 4%;
   }
@@ -355,55 +360,18 @@ label {
   .header__title {
     top: 0%;
   }
-  .section1__column {
-    margin: 0 auto;
-    width: 87%;
+  .section1__container {
+    width: 83%;
+    margin: auto;
   }
-  .section1__image {
-    height: 30em;
-  }
-  .section1__text {
-    word-spacing: 0;
-    font-size: 2em;
+  .section1 h3 {
     line-height: 1.5em;
+    font-size: 2.2em;
   }
-  .section1__text:last-child {
-    font-size: 1.8em;
-    font-weight: lighter;
-  }
-  .section2 {
-    margin: 0 auto;
-    width: 80%;
-  }
-  .section2__title {
-    margin-left: 0.4em;
-  }
-  .section2__text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .section2__paragraph {
-    margin: 1em;
-  }
-  .section3 {
-    margin-top: 0;
-    padding-bottom: 5.6em;
-  }
-  .section3__title {
-    margin: 0 3%;
-    padding-top: 0;
-    height: inherit;
-  }
-  .section3__gallery {
-    margin: 0 auto;
-    text-align: center;
-  }
-  .section3__img {
-    padding: 1% 1% 0.5%;
-    width: 30%;
-    display: inline-block;
-    text-align: center;
+  .section1 h3:last-child {
+    margin-top: 0.5em;
+    font-family: "regular";
+    font-size: 1.5em;
   }
 }
 /*# sourceMappingURL=bio.css.map */
