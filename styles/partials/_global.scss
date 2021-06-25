@@ -138,51 +138,46 @@ label {
 }
 
 .footer {
-  position: relative;
   display: flex;
   flex-direction: column;
+  position: relative;
 
-  &__title {
+  & h2 {
     margin: 0;
-    line-height: 1em;
-    font-size: 2.7em;
-    width: fit-content;
+    line-height: 1.4em;
+    font-family: "demi";
     display: inline-block;
-  }
-
-  &__text {
-    margin-top: 2%;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    display: flex;
-    font-size: 0.8em;
-  }
-
-  &__logo {
-    top: 5.5em;
-    right: 5em;
-    position: absolute;
-  }
-
-  &__copyright {
-    font-size: 1em;
   }
 
   &__icons {
     margin: 0 0 0 5%;
-    width: 25%;
+    width: 20%;
     display: inline-flex;
     font-size: 1.7em;
   }
 
-  &__info {
-    margin-right: 7%;
-  }
-
-  &__social-network {
-    width: 42%;
+  &__text {
+    margin: 2% 0 0 0;
+    padding-bottom: 0;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+  }
+
+  & p {
+    line-height: 1.5em;
+
+    &:nth-child(odd) {
+      margin-top: 2em;
+    }
+  }
+
+  &__logo {
+    top: -2px;
+    right: 2em;
+    position: absolute;
+  }
+
+  &__license {
+    margin-top: 4em;
   }
 }
