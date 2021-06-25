@@ -291,6 +291,9 @@ label {
   .nav__links {
     width: 20%;
   }
+  .header h1 {
+    top: 22%;
+  }
 }
 
 .header {
