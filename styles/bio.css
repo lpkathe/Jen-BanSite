@@ -392,5 +392,27 @@ label {
   .section2 div p:first-child {
     margin-right: 2.1em;
   }
+  .section3 {
+    margin-top: 1.6em;
+    padding-top: 0;
+    background-color: #E1E1E1;
+  }
+  .section3 div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .section3 div img {
+    padding-bottom: 1.6em;
+    width: 30%;
+  }
+  .section3 h2 {
+    line-height: 2.4em;
+    font-family: "regular";
+  }
 }
 /*# sourceMappingURL=bio.css.map */

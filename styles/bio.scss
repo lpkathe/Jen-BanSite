@@ -106,4 +106,26 @@
       }
     }
   }
+
+  .section3 {
+    margin-top: 1.6em;
+    padding-top: 0;
+    background-color: $secondaryColor-2;
+
+    & div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      img {
+        padding-bottom: 1.6em;
+        width: 30%;
+      }
+    }
+
+    & h2 {
+      line-height: 2.4em;
+      font-family: "regular";
+    }
+  }
 }
