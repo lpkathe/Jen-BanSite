@@ -291,24 +291,6 @@ label {
   .nav__links {
     width: 20%;
   }
-  .header h1 {
-    top: 22%;
-  }
-  .section1 div h3 {
-    width: 81%;
-    font-size: 2.7em;
-  }
-  .section1 div h3:last-child {
-    font-family: "demi";
-    font-size: 2em;
-  }
-  .section2 {
-    margin-bottom: 4em;
-    width: 78%;
-  }
-  .section2 div p {
-    font-size: 1.62em;
-  }
 }
 
 .header {
@@ -421,6 +403,40 @@ label {
   .section3 h2 {
     line-height: 2.4em;
     font-family: "regular";
+  }
+}
+
+@media (min-width: 1280px) {
+  .header h1 {
+    top: 22%;
+  }
+  .section1 div h3 {
+    width: 81%;
+    font-size: 2.7em;
+  }
+  .section1 div h3:last-child {
+    font-family: "demi";
+    font-size: 2em;
+  }
+  .section2 {
+    margin-bottom: 4em;
+    width: 78%;
+  }
+  .section2 h3 {
+    font-size: 3.4em;
+  }
+  .section2 div p {
+    font-size: 1.62em;
+  }
+  .section3 {
+    padding-top: 48px;
+  }
+  .section3 h2 {
+    font-size: 5.6em;
+    font-family: "demi";
+  }
+  .section3 div img {
+    padding-bottom: 3.6em;
   }
 }
 /*# sourceMappingURL=bio.css.map */

@@ -129,3 +129,45 @@
     }
   }
 }
+
+@media (min-width: 1280px) {
+  .header h1 {
+    top: 22%;
+  }
+
+  .section1 div h3 {
+    width: 81%;
+    font-size: 2.7em;
+
+    &:last-child {
+      font-family: "demi";
+      font-size: 2em;
+    }
+  }
+
+  .section2 {
+    margin-bottom: 4em;
+    width: 78%;
+
+    & h3 {
+      font-size: 3.4em;
+    }
+
+    & div p {
+      font-size: 1.62em;
+    }
+  }
+
+  .section3 {
+    padding-top: $paddingTop-tablet;
+
+    & h2 {
+      font-size: 5.6em;
+      font-family: "demi";
+    }
+
+    & div img {
+      padding-bottom: 3.6em;
+    }
+  }
+}

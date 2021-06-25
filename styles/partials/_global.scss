@@ -194,27 +194,4 @@ label {
       width: 20%;
     }
   }
-
-  .header h1 {
-    top: 22%;
-  }
-
-  .section1 div h3 {
-    width: 81%;
-    font-size: 2.7em;
-
-    &:last-child {
-      font-family: "demi";
-      font-size: 2em;
-    }
-  }
-
-  .section2 {
-    margin-bottom: 4em;
-    width: 78%;
-
-    & div p {
-      font-size: 1.62em;
-    }
-  }
 }
