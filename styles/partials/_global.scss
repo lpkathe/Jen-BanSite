@@ -43,7 +43,7 @@ label {
     list-style: none;
 
     & li {
-      padding: 10px 0;
+      padding: 1em 0;
       width: 50%;
       display: inline-block;
       position: relative;
@@ -173,7 +173,7 @@ label {
     }
 
     &__logo {
-      top: -2px;
+      top: -0.2em;
       right: 2em;
       position: absolute;
     }
