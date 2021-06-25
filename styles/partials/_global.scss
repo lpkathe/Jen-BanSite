@@ -208,4 +208,13 @@ label {
       font-size: 2em;
     }
   }
+
+  .section2 {
+    margin-bottom: 4em;
+    width: 78%;
+
+    & div p {
+      font-size: 1.62em;
+    }
+  }
 }
