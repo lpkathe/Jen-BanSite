@@ -198,4 +198,14 @@ label {
   .header h1 {
     top: 22%;
   }
+
+  .section1 div h3 {
+    width: 81%;
+    font-size: 2.7em;
+
+    &:last-child {
+      font-family: "demi";
+      font-size: 2em;
+    }
+  }
 }
