@@ -30,13 +30,19 @@
   }
 }
 
-.section1__container {
-  & img {
-    width: 100%;
+.section1 {
+  & h2 {
+    margin-top: 0;
   }
 
-  & h3 {
-    margin-top: 0.5rem;
+  &__container {
+    & img {
+      width: 100%;
+    }
+
+    & h3 {
+      margin-top: 0.5rem;
+    }
   }
 }
 
@@ -135,13 +141,21 @@
     top: 22%;
   }
 
-  .section1 div h3 {
-    width: 81%;
-    font-size: 2.7em;
+  .section1 {
+    div {
+      & img {
+        margin-bottom: 3.5rem;
+      }
 
-    &:last-child {
-      font-family: "demi";
-      font-size: 2em;
+      & h3 {
+        width: 81%;
+        font-size: 2.7em;
+
+        &:last-child {
+          font-family: "demi";
+          font-size: 2em;
+        }
+      }
     }
   }
 

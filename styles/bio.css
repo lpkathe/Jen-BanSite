@@ -344,6 +344,10 @@ label {
   z-index: 2;
 }
 
+.section1 h2 {
+  margin-top: 0;
+}
+
 .section1__container img {
   width: 100%;
 }
@@ -432,6 +436,9 @@ label {
 @media (min-width: 1280px) {
   .header h1 {
     top: 22%;
+  }
+  .section1 div img {
+    margin-bottom: 3.5rem;
   }
   .section1 div h3 {
     width: 81%;
