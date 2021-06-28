@@ -85,7 +85,8 @@ ul,
 .nav__links li,
 h3,
 .section3 h2,
-.logo {
+.logo,
+.footer h2 {
   margin: 0;
 }
 
@@ -152,10 +153,6 @@ label {
 
 .footer {
   padding-bottom: 2%;
-}
-
-.footer h2 {
-  margin-top: 0%;
 }
 
 .footer__icons {
