@@ -344,8 +344,13 @@ label {
   z-index: 2;
 }
 
+.section1 {
+  padding-top: 1.4em;
+}
+
 .section1 h2 {
-  margin-top: 0;
+  margin: 0;
+  line-height: 2.2em;
 }
 
 .section1__container img {
@@ -353,7 +358,8 @@ label {
 }
 
 .section1__container h3 {
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
+  line-height: 1.5em;
 }
 
 .section3 {
