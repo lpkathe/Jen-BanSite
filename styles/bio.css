@@ -548,6 +548,9 @@ label {
 }
 
 @media (min-width: 768px) {
+  label {
+    font-size: 1em;
+  }
   .header__overlay {
     top: -0.4em;
   }
@@ -606,6 +609,18 @@ label {
   }
   .section3 h2 {
     line-height: 2.4em;
+    font-family: "regular";
+  }
+  .section4--title {
+    font-family: "demi";
+  }
+  .section4--userPicture {
+    height: 5.1em;
+    width: 5.4em;
+  }
+  .section4--button {
+    height: 2.5em;
+    width: 23%;
     font-family: "regular";
   }
 }

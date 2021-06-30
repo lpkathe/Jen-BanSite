@@ -50,10 +50,6 @@ $paddingTop-mobile: 2.4em;
     min-width: 15em;
   }
 
-  @mixin formField {
-    max-height: 4.8em;
-  }
-
   @mixin avatar {
     max-height: 4.8em;
     max-width: 4.8em;

@@ -188,6 +188,10 @@
 // Tablet meria query
 
 @media (min-width: 768px) {
+  label {
+    font-size: 1em;
+  }
+
   .header {
     &__overlay {
       top: -0.4em;
@@ -256,6 +260,23 @@
 
     & h2 {
       line-height: 2.4em;
+      font-family: "regular";
+    }
+  }
+
+  .section4 {
+    &--title {
+      font-family: "demi";
+    }
+
+    &--userPicture {
+      height: 5.1em;
+      width: 5.4em;
+    }
+
+    &--button {
+      height: 2.5em;
+      width: 23%;
       font-family: "regular";
     }
   }
