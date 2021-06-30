@@ -64,6 +64,137 @@
   }
 }
 
+.section4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  &--title {
+    line-height: 1em;
+  }
+
+  &--newComment {
+    width: 100%;
+    display: flex;
+  }
+
+  &--userPicture {
+    margin-top: 2.7em;
+    justify-items: flex-start;
+    @include avatar;
+  }
+
+  &__form {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+
+    &--list {
+      width: 100%;
+
+      padding-left: 5%;
+      list-style: none;
+    }
+
+    &--label {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      color: $primaryColor-2;
+    }
+
+    &--item2 {
+      margin: 1.5em 0;
+    }
+
+    &--input {
+      padding: 0.7em;
+      width: 91%;
+      border-radius: 0.4em;
+      border: 0.1em solid $secondaryColor-2;
+      outline-color: $primaryColor-1;
+      background-color: $secondaryColor-3;
+
+      &:active {
+        border-color: $primaryColor-1;
+      }
+
+      &:invalid {
+        border-color: #d22d2d;
+      }
+
+      &::placeholder {
+        color: $primaryColor-1;
+      }
+    }
+
+    &--comment {
+      min-height: 3.6em;
+      height: 6em;
+    }
+  }
+
+  &--button {
+    @include buttonStyle;
+    height: 3em;
+    width: 82%;
+    font-size: 1.5em;
+    align-self: flex-end;
+  }
+
+  &__comments {
+  }
+}
+
+.line {
+  @include dividerLine;
+}
+
+.comment__box {
+  display: flex;
+}
+
+.user {
+  &__form {
+    width: 90%;
+  }
+
+  &__info {
+    margin: 0;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__name {
+    margin: 1% 0 0.2em 0;
+    width: fit-content;
+  }
+
+  &__date {
+    margin-bottom: 0.2em;
+    width: fit-content;
+    color: $primaryColor-2;
+  }
+
+  &__comment {
+    line-height: 1.5em;
+  }
+
+  &__box {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__first-line {
+    display: flex;
+  }
+}
+
 // Tablet meria query
 
 @media (min-width: 768px) {

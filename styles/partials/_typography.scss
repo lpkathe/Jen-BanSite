@@ -20,10 +20,6 @@
 
 // Fonts for mobile
 
-html {
-  font-size: 10px;
-}
-
 h1,
 h2 {
   font-size: 2.4em;
@@ -48,7 +44,7 @@ label,
 button {
   font-size: 1em;
   line-height: 2em;
-  font-family: "bold";
+  font-family: "demi";
 }
 
 // Fonts for tablet and desktop
@@ -84,9 +80,13 @@ button {
     font-family: "regular";
   }
 
-  button,
-  label {
+  button {
     font-size: 1.2em;
     font-family: "bold";
+  }
+
+  label {
+    font-size: 1.2em;
+    font-family: "demi";
   }
 }

@@ -20,7 +20,6 @@ $secondaryColor-3: #fafafa;
 
 @mixin buttonStyle {
   height: 4em;
-  width: 100%;
   border-radius: 0.4em;
   border: none;
 
@@ -30,25 +29,13 @@ $secondaryColor-3: #fafafa;
 }
 
 @mixin dividerLine {
-  border: 0.1em solid $secondary-color-2;
-}
-
-@mixin formField {
-  padding: 1.6em;
-  width: 100%;
-  border-radius: 0.4em;
   border: 0.1em solid $secondaryColor-2;
-
-  &:active {
-    border-color: $primaryColor-1;
-  }
-
-  &:invalid {
-    border-color: #d22d2d;
-  }
 }
 
 @mixin avatar {
+  height: 3.6em;
+  width: 4em;
+  background-color: $secondaryColor-2;
   border-radius: 50%;
 }
 
