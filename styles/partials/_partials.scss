@@ -1,11 +1,3 @@
-// General variables
-
-$horizontalPadding-tablet: 0 3.6em;
-$paddingTop-tablet: 4.8em;
-
-$horizontalPadding-mobile: 0 1.6em;
-$paddingTop-mobile: 2.4em;
-
 // Colors
 
 $primaryColor-1: #323232;
@@ -15,6 +7,15 @@ $primaryColor-3: #ffffff;
 $secondaryColor-1: #000000;
 $secondaryColor-2: #e1e1e1;
 $secondaryColor-3: #fafafa;
+
+// General variables
+
+$horizontalPadding-tablet: 0 3.6em;
+$paddingTop-tablet: 4.8em;
+$divideLine: 0.1em solid $secondaryColor-2;
+
+$horizontalPadding-mobile: 0 1.6em;
+$paddingTop-mobile: 2.4em;
 
 // General styles
 
@@ -28,13 +29,9 @@ $secondaryColor-3: #fafafa;
   }
 }
 
-@mixin dividerLine {
-  border: 0.1em solid $secondaryColor-2;
-}
-
 @mixin avatar {
-  height: 3.6em;
-  width: 4em;
+  height: 3.1em;
+  width: 3.4em;
   background-color: $secondaryColor-2;
   border-radius: 50%;
 }
