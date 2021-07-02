@@ -24,27 +24,27 @@ h1,
 h2 {
   font-size: 2.4em;
   line-height: 3.2em;
-  font-family: "demi"; // It is modified to be more similar to the mockup
+  font-family: "demi", Courier, monospace; // It is modified to be more similar to the mockup
 }
 
 h3,
 li {
   font-size: 1.4em;
   line-height: 2.2em;
-  font-family: "demi";
+  font-family: "demi", Courier, monospace;
 }
 
 p {
   font-size: 1.3em;
   line-height: 1.8em;
-  font-family: "regular";
+  font-family: "regular", Courier, monospace;
 }
 
 label,
 button {
   font-size: 1em;
   line-height: 2em;
-  font-family: "demi";
+  font-family: "demi", Courier, monospace;
 }
 
 // Fonts for tablet and desktop
@@ -53,40 +53,40 @@ button {
   h1 {
     font-size: 6em;
     line-height: 6.8em;
-    font-family: "bold";
+    font-family: "bold", Courier, monospace;
   }
 
   h2 {
     font-size: 3.6em;
     line-height: 4.4em;
-    font-family: "bold";
+    font-family: "bold", Courier, monospace;
   }
 
   h3 {
     font-size: 2.4em;
     line-height: 3.2em;
-    font-family: "demi";
+    font-family: "demi", Courier, monospace;
   }
 
   p {
     font-size: 1.4em;
     line-height: 2.2em;
-    font-family: "regular";
+    font-family: "regular", Courier, monospace;
   }
 
   footer p {
     font-size: 1.4em;
     line-height: 2em;
-    font-family: "regular";
+    font-family: "regular", Courier, monospace;
   }
 
   button {
     font-size: 1.2em;
-    font-family: "bold";
+    font-family: "bold", Courier, monospace;
   }
 
   label {
     font-size: 1.2em;
-    font-family: "demi";
+    font-family: "demi", Courier, monospace;
   }
 }
