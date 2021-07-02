@@ -30,41 +30,39 @@
   }
 }
 
-.section1 {
+.aboutTheMusicians {
   padding-top: 1.4em;
 
-  & h2 {
+  &__title {
     margin: 0;
     line-height: 2.2em;
   }
 
-  &__container {
-    & img {
-      width: 100%;
-    }
+  &__image {
+    width: 100%;
+  }
 
-    & h3 {
-      margin-top: 1.5rem;
-      line-height: 1.5em;
-    }
+  &__subtitle {
+    margin-top: 1.5rem;
+    line-height: 1.5em;
   }
 }
 
-.section3 {
+.photoGallegry {
   padding-bottom: 1.6em;
   background-color: $secondaryColor-2;
 
-  & h2 {
+  &__title {
     padding-bottom: 0.5rem;
   }
 
-  &__images img {
+  &__image {
     padding: 0.3rem 0;
     width: 100%;
   }
 }
 
-.section4 {
+.joinTheConversation {
   margin-bottom: 1.6em;
   width: 100%;
   display: flex;
@@ -202,13 +200,19 @@
     }
   }
 
-  .section1 {
+  .aboutTheMusicians {
+    &__title {
+      margin-top: 0;
+      line-height: 1.4em; // I modify the values so that it is more similar to the mockup
+      font-family: "demi"; // I modify the values so that it is more similar to the mockup
+    }
+
     &__container {
       width: 83%;
       margin: auto;
     }
 
-    & h3 {
+    &__subtitle {
       line-height: 1.5em;
       font-size: 2.2em;
 
@@ -220,61 +224,61 @@
     }
   }
 
-  .section2 {
+  .theBeesKnees {
     width: 75%;
     margin: auto;
     margin-bottom: 2em;
 
-    & h3 {
+    &__title {
       line-height: 2.2em;
     }
 
-    & div {
+    &__container {
       display: flex;
+    }
 
-      p {
-        line-height: 1.5em;
+    &__paragraph {
+      line-height: 1.5em;
 
-        &:first-child {
-          margin-right: 2.1em;
-        }
+      &:first-child {
+        margin-right: 2.1em;
       }
     }
   }
 
-  .section3 {
+  .photoGallegry {
     margin-top: 1.6em;
     padding-top: 0;
     background-color: $secondaryColor-2;
 
-    & div {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-
-      img {
-        padding-bottom: 1.6em;
-        width: 30%;
-      }
-    }
-
-    & h2 {
+    &__title {
       line-height: 2.4em;
       font-family: "regular";
     }
+
+    &__images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    &__image {
+      padding-bottom: 1.6em;
+      width: 30%;
+    }
   }
 
-  .section4 {
-    &--title {
+  .joinTheConversation {
+    &__title {
       font-family: "demi";
     }
 
-    &--userPicture {
+    &__userPicture {
       height: 5.1em;
       width: 5.4em;
     }
 
-    &--button {
+    &__button {
       height: 2.5em;
       width: 23%;
       font-family: "regular";
@@ -287,46 +291,44 @@
     top: 22%;
   }
 
-  .section1 {
-    div {
-      & img {
-        margin-bottom: 3.5rem;
-      }
+  .aboutTheMusicians {
+    &__image {
+      margin-bottom: 3.5rem;
+    }
 
-      & h3 {
-        width: 81%;
-        font-size: 2.7em;
+    &__subtitle {
+      width: 81%;
+      font-size: 2.7em;
 
-        &:last-child {
-          font-family: "demi";
-          font-size: 2em;
-        }
+      &:last-child {
+        font-family: "demi";
+        font-size: 2em;
       }
     }
   }
 
-  .section2 {
+  .theBeesKnees {
     margin-bottom: 4em;
     width: 78%;
 
-    & h3 {
+    &__title {
       font-size: 3.4em;
     }
 
-    & div p {
+    &__paragraph {
       font-size: 1.62em;
     }
   }
 
-  .section3 {
+  .photoGallegry {
     padding-top: $paddingTop-tablet;
 
-    & h2 {
+    &__title {
       font-size: 5.6em;
       font-family: "demi";
     }
 
-    & div img {
+    &__image {
       padding-bottom: 3.6em;
     }
   }
