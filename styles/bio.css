@@ -640,6 +640,7 @@ label {
     display: flex;
   }
   .theBeesKnees__paragraph {
+    font-size: 1.38em;
     line-height: 1.5em;
   }
   .theBeesKnees__paragraph:first-child {
