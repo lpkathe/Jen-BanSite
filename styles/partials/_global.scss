@@ -73,6 +73,10 @@ label {
   }
 }
 
+.strongText {
+  font-family: "demi";
+}
+
 .footer {
   padding-bottom: 2%;
 
@@ -80,10 +84,6 @@ label {
     width: 43%;
     @include center;
     justify-content: space-between;
-  }
-
-  &__strongText {
-    font-family: "demi";
   }
 
   & div p {
