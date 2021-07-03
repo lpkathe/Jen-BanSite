@@ -706,5 +706,23 @@ label {
     padding-bottom: 1.6em;
     width: 32%;
   }
+  .joinTheConversation {
+    margin: 0 3.6em;
+    width: auto;
+  }
+  .joinTheConversation__newComment,
+  .joinTheConversation .joinTheConversation__comments {
+    width: 50%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .joinTheConversation__button {
+    margin-right: 25%;
+    width: 15%;
+  }
+  .joinTheConversation__comment--paragraph {
+    padding: 0 1.2em 0 0;
+  }
 }
 /*# sourceMappingURL=bio.css.map */

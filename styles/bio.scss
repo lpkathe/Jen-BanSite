@@ -388,4 +388,24 @@
       width: 32%;
     }
   }
+
+  .joinTheConversation {
+    margin: 0 3.6em;
+    width: auto;
+
+    &__newComment,
+    .joinTheConversation__comments {
+      width: 50%;
+      align-self: center;
+    }
+
+    &__button {
+      margin-right: 25%;
+      width: 15%;
+    }
+
+    &__comment--paragraph {
+      padding: 0 1.2em 0 0;
+    }
+  }
 }
