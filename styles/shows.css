@@ -503,4 +503,25 @@ label {
     margin-top: 1em;
   }
 }
+
+@media (min-width: 1280px) {
+  .header__text {
+    top: 19%;
+    left: 7%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__titles {
+    width: 53%;
+  }
+  .header__title {
+    width: 85%;
+  }
+  .header iframe {
+    margin-top: 7em;
+    margin-left: 2em;
+    width: 42em;
+  }
+}
 /*# sourceMappingURL=shows.css.map */

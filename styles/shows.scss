@@ -194,3 +194,29 @@
     margin-top: 1em;
   }
 }
+
+// Desktop media query
+
+@include desktop {
+  .header {
+    &__text {
+      top: 19%;
+      left: 7%;
+      display: flex;
+    }
+
+    &__titles {
+      width: 53%;
+    }
+
+    &__title {
+      width: 85%;
+    }
+
+    & iframe {
+      margin-top: 7em;
+      margin-left: 2em;
+      width: 42em;
+    }
+  }
+}
