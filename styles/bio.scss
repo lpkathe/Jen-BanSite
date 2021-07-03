@@ -256,13 +256,13 @@
 
     &__title {
       line-height: 2.4em;
-      font-family: "regular";
+      font-family: "demi";
     }
 
     &__images {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: space-between;
     }
 
     &__image {

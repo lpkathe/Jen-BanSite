@@ -652,7 +652,7 @@ label {
   }
   .photoGallegry__title {
     line-height: 2.4em;
-    font-family: "regular";
+    font-family: "demi";
   }
   .photoGallegry__images {
     display: -webkit-box;
@@ -660,8 +660,9 @@ label {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .photoGallegry__image {
     padding-bottom: 1.6em;
