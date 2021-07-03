@@ -523,5 +523,42 @@ label {
     margin-left: 2em;
     width: 42em;
   }
+  .shows__section {
+    margin: -16em 0 0 0;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: relative;
+    z-index: 4;
+  }
+  .shows__list {
+    padding: 0 0 0 20em;
+    width: 100%;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+  .shows__title {
+    margin-left: 4%;
+  }
+  .shows__titles {
+    margin: 0 -2% 1% 0;
+    width: 17.3em;
+  }
+  .shows__button {
+    margin-top: 0;
+  }
+  .shows__group:first-child {
+    margin-bottom: 3%;
+  }
+  .line {
+    margin: 2% 0;
+    width: 85%;
+  }
 }
 /*# sourceMappingURL=shows.css.map */

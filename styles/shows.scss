@@ -219,4 +219,43 @@
       width: 42em;
     }
   }
+
+  .shows {
+    &__section {
+      margin: -16em 0 0 0;
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      z-index: 4;
+    }
+
+    &__list {
+      padding: 0 0 0 20em;
+      width: 100%;
+      align-self: end;
+    }
+
+    &__title {
+      margin-left: 4%;
+    }
+
+    &__titles {
+      margin: 0 -2% 1% 0;
+      width: 17.3em;
+    }
+
+    &__button {
+      margin-top: 0;
+    }
+
+    &__group:first-child {
+      margin-bottom: 3%;
+    }
+  }
+
+  .line {
+    margin: 2% 0;
+    width: 85%;
+  }
 }
