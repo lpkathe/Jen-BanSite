@@ -10,16 +10,17 @@ $secondaryColor-3: #fafafa;
 
 // General variables
 
-$horizontalPadding-tablet: 0 3.6em;
-$paddingTop-tablet: 4.8em;
-$divideLine: 0.1em solid $secondaryColor-2;
-
 $horizontalPadding-mobile: 0 1.6em;
 $paddingTop-mobile: 2.4em;
+$divideLine: 0.1em solid $secondaryColor-2;
+
+$horizontalPadding-tablet: 0 3.6em;
+$paddingTop-tablet: 4.8em;
 
 // General styles
 
 @mixin buttonStyle {
+  @content;
   height: 4em;
   border-radius: 0.4em;
   border: none;
@@ -30,6 +31,7 @@ $paddingTop-mobile: 2.4em;
 }
 
 @mixin avatar {
+  @content;
   height: 3.1em;
   width: 3.4em;
   background-color: $secondaryColor-2;
@@ -57,12 +59,12 @@ $paddingTop-mobile: 2.4em;
 // Styles for tablet
 
 @include tablet {
-  @mixin buttonStyle {
+  @include buttonStyle {
     padding: 0 3.2em;
     min-width: 15em;
   }
 
-  @mixin avatar {
+  @include avatar {
     max-height: 4.8em;
     max-width: 4.8em;
   }

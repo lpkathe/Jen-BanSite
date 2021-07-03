@@ -31,8 +31,6 @@
 }
 
 .aboutTheMusicians {
-  padding-top: 1.4em;
-
   &__title {
     margin: 0;
     line-height: 2.2em;
@@ -195,7 +193,8 @@
     }
 
     &__title {
-      top: 0%;
+      top: 7%;
+      font-family: "regular", Courier, monospace;
     }
   }
 
@@ -211,7 +210,12 @@
       margin: auto;
     }
 
+    &__image {
+      margin-top: 1.6em;
+    }
+
     &__subtitle {
+      margin-top: 2.5rem;
       line-height: 1.5em;
       font-size: 2.2em;
 
@@ -283,6 +287,8 @@
     }
   }
 }
+
+// Desktop meria query
 
 @include desktop {
   .header h1 {

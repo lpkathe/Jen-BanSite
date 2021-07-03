@@ -1,3 +1,20 @@
+@media (min-width: 768px) {
+  padding: 0 3.2em;
+  min-width: 15em;
+  height: 4em;
+  border-radius: 0.4em;
+  border: none;
+  :hover {
+    background-color: #000000;
+  }
+  max-height: 4.8em;
+  max-width: 4.8em;
+  height: 3.1em;
+  width: 3.4em;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+}
+
 @font-face {
   font-family: "bold";
   src: url(../../assets/Font/AvenirNextLTPro-Bold.otf) format("openType");
@@ -77,6 +94,40 @@ button {
     font-size: 1.2em;
     font-family: "demi", Courier, monospace;
   }
+}
+
+@media (min-width: 768px) {
+  padding: 0 3.2em;
+  min-width: 15em;
+  height: 4em;
+  border-radius: 0.4em;
+  border: none;
+  :hover {
+    background-color: #000000;
+  }
+  max-height: 4.8em;
+  max-width: 4.8em;
+  height: 3.1em;
+  width: 3.4em;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  padding: 0 3.2em;
+  min-width: 15em;
+  height: 4em;
+  border-radius: 0.4em;
+  border: none;
+  :hover {
+    background-color: #000000;
+  }
+  max-height: 4.8em;
+  max-width: 4.8em;
+  height: 3.1em;
+  width: 3.4em;
+  background-color: #e1e1e1;
+  border-radius: 50%;
 }
 
 html {
@@ -344,10 +395,6 @@ label {
   z-index: 2;
 }
 
-.aboutTheMusicians {
-  padding-top: 1.4em;
-}
-
 .aboutTheMusicians__title {
   margin: 0;
   line-height: 2.2em;
@@ -554,7 +601,8 @@ label {
     top: -0.4em;
   }
   .header__title {
-    top: 0%;
+    top: 7%;
+    font-family: "regular", Courier, monospace;
   }
   .aboutTheMusicians__title {
     margin-top: 0;
@@ -565,7 +613,11 @@ label {
     width: 83%;
     margin: auto;
   }
+  .aboutTheMusicians__image {
+    margin-top: 1.6em;
+  }
   .aboutTheMusicians__subtitle {
+    margin-top: 2.5rem;
     line-height: 1.5em;
     font-size: 2.2em;
   }
