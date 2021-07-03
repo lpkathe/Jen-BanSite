@@ -110,7 +110,7 @@ label {
 
 // Tablet media query
 
-@media (min-width: 768px) {
+@include tablet {
   article,
   footer {
     padding: $horizontalPadding-tablet;
@@ -186,7 +186,7 @@ label {
 
 // Desktop media query
 
-@media (min-width: 1280px) {
+@include desktop {
   .nav {
     padding-left: 7%;
 

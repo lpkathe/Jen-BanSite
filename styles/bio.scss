@@ -184,7 +184,7 @@
 
 // Tablet meria query
 
-@media (min-width: 768px) {
+@include tablet {
   label {
     font-size: 1em;
   }
@@ -284,7 +284,7 @@
   }
 }
 
-@media (min-width: 1280px) {
+@include desktop {
   .header h1 {
     top: 22%;
   }

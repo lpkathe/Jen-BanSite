@@ -1,3 +1,5 @@
+@import "./partials";
+
 // Typography
 
 @font-face {
@@ -49,7 +51,7 @@ button {
 
 // Fonts for tablet and desktop
 
-@media (min-width: 768px) {
+@include tablet {
   h1 {
     font-size: 6em;
     line-height: 6.8em;

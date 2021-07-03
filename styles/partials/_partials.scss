@@ -42,9 +42,21 @@ $paddingTop-mobile: 2.4em;
   align-items: center;
 }
 
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
 // Styles for tablet
 
-@media (min-width: 768px) {
+@include tablet {
   @mixin buttonStyle {
     padding: 0 3.2em;
     min-width: 15em;
