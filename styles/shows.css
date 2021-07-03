@@ -560,5 +560,24 @@ label {
     margin: 2% 0;
     width: 85%;
   }
+  .footer {
+    margin: 0;
+    padding-left: 8em;
+  }
+  .footer h2 {
+    font-size: 3.6em;
+  }
+  .footer__icons {
+    margin: 0 0 0 4%;
+  }
+  .footer__text {
+    width: 63%;
+  }
+  .footer__title {
+    margin: 0px 8% 0 0;
+  }
+  .footer__logo {
+    left: 94em;
+  }
 }
 /*# sourceMappingURL=shows.css.map */

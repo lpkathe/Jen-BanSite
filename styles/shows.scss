@@ -258,4 +258,29 @@
     margin: 2% 0;
     width: 85%;
   }
+
+  .footer {
+    margin: 0;
+    padding-left: 8em;
+
+    & h2 {
+      font-size: 3.6em;
+    }
+
+    &__icons {
+      margin: 0 0 0 4%;
+    }
+
+    &__text {
+      width: 63%;
+    }
+
+    &__title {
+      margin: 0px 8% 0 0;
+    }
+
+    &__logo {
+      left: 94em;
+    }
+  }
 }
