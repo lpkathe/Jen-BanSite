@@ -695,14 +695,16 @@ label {
     font-size: 1.62em;
   }
   .photoGallegry {
-    padding-top: 4.8em;
+    margin: 0 3.6em;
   }
   .photoGallegry__title {
+    margin-bottom: 0;
     font-size: 5.6em;
     font-family: "demi";
   }
   .photoGallegry__image {
-    padding-bottom: 3.6em;
+    padding-bottom: 1.6em;
+    width: 32%;
   }
 }
 /*# sourceMappingURL=bio.css.map */
