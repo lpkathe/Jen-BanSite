@@ -75,7 +75,7 @@ function onLoad(event) {
       const titleElement = document.createElement("label");
       titleElement.className = "shows__titles";
       titleElement.innerText = title;
-      titlesDiv.className = "shows__group";
+      titlesDiv.className = "shows__group shows__group--1";
       titlesDiv.appendChild(titleElement);
     });
     showsList.appendChild(titlesDiv);
