@@ -272,19 +272,67 @@
   }
 
   .joinTheConversation {
+    margin-bottom: 3em;
+
     &__title {
       font-family: "demi";
     }
 
+    &__newComment {
+      padding: $horizontalPadding-tablet;
+      width: auto;
+    }
+
     &__userPicture {
-      height: 5.1em;
-      width: 5.4em;
+      height: 3.6em;
+      width: 3.9em;
+
+      &--1 {
+        height: 4.8em;
+        width: 4.8em;
+      }
+    }
+
+    &__form {
+      &--input {
+        width: auto;
+
+        &1 {
+          height: 2em;
+        }
+      }
+
+      &--list {
+        padding-left: 3%;
+      }
     }
 
     &__button {
+      margin-right: 2.6em;
+      margin-bottom: 1.6em;
       height: 2.5em;
       width: 23%;
       font-family: "regular";
+    }
+
+    &__comments {
+      margin: $horizontalPadding-tablet;
+    }
+
+    &__comment {
+      padding: 0.3em 0;
+
+      &--box {
+        padding-left: 2.4em;
+      }
+
+      &--name {
+        font-size: 1.8em;
+      }
+
+      &--paragraph {
+        font-size: 1.5em;
+      }
     }
   }
 }

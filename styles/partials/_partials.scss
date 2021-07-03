@@ -55,17 +55,3 @@ $paddingTop-tablet: 4.8em;
     @content;
   }
 }
-
-// Styles for tablet
-
-@include tablet {
-  @include buttonStyle {
-    padding: 0 3.2em;
-    min-width: 15em;
-  }
-
-  @include avatar {
-    max-height: 4.8em;
-    max-width: 4.8em;
-  }
-}

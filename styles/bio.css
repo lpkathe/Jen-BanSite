@@ -1,20 +1,3 @@
-@media (min-width: 768px) {
-  padding: 0 3.2em;
-  min-width: 15em;
-  height: 4em;
-  border-radius: 0.4em;
-  border: none;
-  :hover {
-    background-color: #000000;
-  }
-  max-height: 4.8em;
-  max-width: 4.8em;
-  height: 3.1em;
-  width: 3.4em;
-  background-color: #e1e1e1;
-  border-radius: 50%;
-}
-
 @font-face {
   font-family: "bold";
   src: url(../../assets/Font/AvenirNextLTPro-Bold.otf) format("openType");
@@ -94,40 +77,6 @@ button {
     font-size: 1.2em;
     font-family: "demi", Courier, monospace;
   }
-}
-
-@media (min-width: 768px) {
-  padding: 0 3.2em;
-  min-width: 15em;
-  height: 4em;
-  border-radius: 0.4em;
-  border: none;
-  :hover {
-    background-color: #000000;
-  }
-  max-height: 4.8em;
-  max-width: 4.8em;
-  height: 3.1em;
-  width: 3.4em;
-  background-color: #e1e1e1;
-  border-radius: 50%;
-}
-
-@media (min-width: 768px) {
-  padding: 0 3.2em;
-  min-width: 15em;
-  height: 4em;
-  border-radius: 0.4em;
-  border: none;
-  :hover {
-    background-color: #000000;
-  }
-  max-height: 4.8em;
-  max-width: 4.8em;
-  height: 3.1em;
-  width: 3.4em;
-  background-color: #e1e1e1;
-  border-radius: 50%;
 }
 
 html {
@@ -668,17 +617,54 @@ label {
     padding-bottom: 1.6em;
     width: 30%;
   }
+  .joinTheConversation {
+    margin-bottom: 3em;
+  }
   .joinTheConversation__title {
     font-family: "demi";
   }
+  .joinTheConversation__newComment {
+    padding: 0 3.6em;
+    width: auto;
+  }
   .joinTheConversation__userPicture {
-    height: 5.1em;
-    width: 5.4em;
+    height: 3.6em;
+    width: 3.9em;
+  }
+  .joinTheConversation__userPicture--1 {
+    height: 4.8em;
+    width: 4.8em;
+  }
+  .joinTheConversation__form--input {
+    width: auto;
+  }
+  .joinTheConversation__form--input1 {
+    height: 2em;
+  }
+  .joinTheConversation__form--list {
+    padding-left: 3%;
   }
   .joinTheConversation__button {
+    margin-right: 2.6em;
+    margin-bottom: 1.6em;
     height: 2.5em;
     width: 23%;
     font-family: "regular";
+  }
+  .joinTheConversation__comments {
+    margin: 0 3.6em;
+  }
+  .joinTheConversation__comment {
+    padding: 0.3em 0;
+  }
+  .joinTheConversation__comment--box {
+    padding-left: 2.4em;
+  }
+  .joinTheConversation__comment--name {
+    font-size: 1.8em;
+  }
+  .joinTheConversation__comment--paragraph {
+    font-size: 1.5em;
   }
 }
 
