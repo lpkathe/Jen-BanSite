@@ -364,4 +364,57 @@ label {
 .header__iframe {
   margin: 0 auto;
 }
+
+.shows__section {
+  padding: 0 1.6em;
+  padding-top: 2.4em;
+}
+
+.shows__section label {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.shows__title {
+  margin: 0;
+  line-height: 1.2em;
+  font-size: 3.4em;
+}
+
+.shows__titles {
+  margin: 2% 0 1% 0;
+  display: block;
+  text-transform: uppercase;
+  color: #afafaf;
+}
+
+.shows__value {
+  margin: 0 0 5% 0;
+}
+
+.shows__button {
+  height: 4em;
+  border-radius: 0.4em;
+  border: none;
+  height: 3em;
+  width: 100%;
+  font-size: 1.5em;
+}
+
+.shows__button:hover {
+  background-color: #000000;
+}
+
+.shows__button:hover {
+  background-color: #000000;
+}
+
+.line {
+  margin: 5% 0;
+  border: 1px solid #e1e1e1;
+}
+
+.footer {
+  margin-top: 5%;
+}
 /*# sourceMappingURL=shows.css.map */

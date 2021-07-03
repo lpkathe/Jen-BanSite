@@ -50,3 +50,52 @@
     margin: 0 auto;
   }
 }
+
+.shows {
+  &__section {
+    padding: $horizontalPadding-mobile;
+    padding-top: $paddingTop-mobile;
+
+    & label {
+      margin-bottom: 0;
+      padding: 0;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    line-height: 1.2em;
+    font-size: 3.4em;
+  }
+
+  &__titles {
+    margin: 2% 0 1% 0;
+    display: block;
+    text-transform: uppercase;
+    color: $primaryColor-2;
+  }
+
+  &__value {
+    margin: 0 0 5% 0;
+  }
+
+  &__button {
+    @include buttonStyle;
+    height: 3em;
+    width: 100%;
+    font-size: 1.5em;
+
+    &:hover {
+      background-color: $secondaryColor-1;
+    }
+  }
+}
+
+.line {
+  margin: 5% 0;
+  border: 1px solid $secondaryColor-2;
+}
+
+.footer {
+  margin-top: 5%;
+}
