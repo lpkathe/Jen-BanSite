@@ -1,0 +1,52 @@
+@import "./partials/_typography";
+@import "./partials/_partials";
+@import "./partials/_global";
+
+.header {
+  width: auto;
+  color: $primaryColor-3;
+  position: relative;
+
+  & article {
+    padding: 0;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__overlay {
+    top: -0.3em;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+    background-color: $primaryColor-1;
+    position: absolute;
+    z-index: 1;
+  }
+
+  &__text {
+    top: 1.4em;
+    padding: $horizontalPadding-mobile;
+    position: absolute;
+    z-index: 2;
+  }
+
+  &__title {
+    margin-top: 1em;
+    font-family: "regular", Courier, monospace;
+    line-height: 1.5em;
+    color: $primaryColor-3;
+
+    &--2 {
+      margin-top: 0.7em;
+      width: 70%;
+      line-height: 1.3em;
+    }
+  }
+
+  &__iframe {
+    margin: 0 auto;
+  }
+}
