@@ -669,8 +669,9 @@ label {
 }
 
 @media (min-width: 1280px) {
-  .header h1 {
-    top: 22%;
+  .header__title {
+    top: 14%;
+    left: 9%;
   }
   .aboutTheMusicians__image {
     margin-bottom: 3.5rem;

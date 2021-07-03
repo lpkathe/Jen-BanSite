@@ -340,8 +340,9 @@
 // Desktop meria query
 
 @include desktop {
-  .header h1 {
-    top: 22%;
+  .header__title {
+    top: 14%;
+    left: 9%;
   }
 
   .aboutTheMusicians {
