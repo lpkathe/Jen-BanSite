@@ -2,6 +2,16 @@
 @import "./partials/_partials";
 @import "./partials/_global";
 
+.nav li {
+  &:first-child {
+    border-bottom: none;
+  }
+
+  &:last-child {
+    border-bottom: 0.3em solid $primaryColor-3;
+  }
+}
+
 .header {
   width: auto;
   color: $primaryColor-3;
@@ -44,10 +54,6 @@
       width: 70%;
       line-height: 1.3em;
     }
-  }
-
-  &__iframe {
-    margin: 0 auto;
   }
 }
 
@@ -98,4 +104,32 @@
 
 .footer {
   margin-top: 5%;
+}
+
+// Tablet media query
+
+@include tablet {
+  .header {
+    & iframe {
+      height: 12em;
+      width: 60%;
+    }
+    &__text {
+      top: 0;
+      padding: $horizontalPadding-tablet;
+      padding-top: $paddingTop-tablet;
+    }
+
+    &__title {
+      margin-top: 0.4em;
+      font-size: 2.7em;
+
+      &--2 {
+        margin-top: 0.1em;
+        width: 75%;
+        font-size: 6em;
+        font-family: "demi", Courier, monospace;
+      }
+    }
+  }
 }
