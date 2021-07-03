@@ -23,7 +23,7 @@
   }
 
   &__title {
-    top: 35%;
+    top: 27%;
     left: 5%;
     position: absolute;
     z-index: 2;
@@ -50,7 +50,6 @@
 
 .photoGallegry {
   padding-bottom: 1.6em;
-  background-color: $secondaryColor-2;
 
   &__title {
     padding-bottom: 0.5rem;
@@ -69,20 +68,20 @@
   flex-direction: column;
   box-sizing: border-box;
 
-  &--title {
+  &__title {
     line-height: 1em;
   }
 
-  &--newComment {
+  &__newComment {
     width: 100%;
     display: flex;
   }
 
-  &--userPicture {
+  &__userPicture {
     justify-items: flex-start;
     @include avatar;
 
-    &1 {
+    &--1 {
       margin-top: 2.7em;
     }
   }
@@ -138,7 +137,7 @@
     }
   }
 
-  &--button {
+  &__button {
     @include buttonStyle;
     height: 3em;
     width: 82%;

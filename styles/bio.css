@@ -20,62 +20,62 @@ h1,
 h2 {
   font-size: 2.4em;
   line-height: 3.2em;
-  font-family: "demi";
+  font-family: "demi", Courier, monospace;
 }
 
 h3,
 li {
   font-size: 1.4em;
   line-height: 2.2em;
-  font-family: "demi";
+  font-family: "demi", Courier, monospace;
 }
 
 p {
   font-size: 1.3em;
   line-height: 1.8em;
-  font-family: "regular";
+  font-family: "regular", Courier, monospace;
 }
 
 label,
 button {
   font-size: 1em;
   line-height: 2em;
-  font-family: "demi";
+  font-family: "demi", Courier, monospace;
 }
 
 @media (min-width: 768px) {
   h1 {
     font-size: 6em;
     line-height: 6.8em;
-    font-family: "bold";
+    font-family: "bold", Courier, monospace;
   }
   h2 {
     font-size: 3.6em;
     line-height: 4.4em;
-    font-family: "bold";
+    font-family: "bold", Courier, monospace;
   }
   h3 {
     font-size: 2.4em;
     line-height: 3.2em;
-    font-family: "demi";
+    font-family: "demi", Courier, monospace;
   }
   p {
     font-size: 1.4em;
     line-height: 2.2em;
-    font-family: "regular";
+    font-family: "regular", Courier, monospace;
   }
   footer p {
     font-size: 1.4em;
     line-height: 2em;
-    font-family: "regular";
+    font-family: "regular", Courier, monospace;
   }
   button {
     font-size: 1.2em;
-    font-family: "bold";
+    font-family: "bold", Courier, monospace;
   }
   label {
     font-size: 1.2em;
-    font-family: "demi";
+    font-family: "demi", Courier, monospace;
   }
 }
 
@@ -154,8 +154,16 @@ label {
   color: #e1e1e1;
 }
 
+.strongText {
+  font-family: "demi";
+}
+
 .footer {
   padding-bottom: 2%;
+}
+
+.footer article {
+  padding: 0;
 }
 
 .footer__icons {
@@ -174,15 +182,12 @@ label {
           justify-content: space-between;
 }
 
-.footer__strongText {
-  font-family: "demi";
-}
-
-.footer div p {
+.footer__text p {
   margin-bottom: 0;
+  line-height: 1.5em;
 }
 
-.footer div p:nth-child(even) {
+.footer__text p:nth-child(even) {
   margin-top: 0;
 }
 
@@ -199,11 +204,6 @@ label {
   footer {
     padding: 0 3.6em;
     padding-top: 4.8em;
-  }
-  .section1 h2 {
-    margin-top: 0;
-    line-height: 1.4em;
-    font-family: "demi";
   }
   .logo {
     margin: 4%;
@@ -338,45 +338,44 @@ label {
 }
 
 .header__title {
-  top: 35%;
+  top: 27%;
   left: 5%;
   position: absolute;
   z-index: 2;
 }
 
-.section1 {
+.aboutTheMusicians {
   padding-top: 1.4em;
 }
 
-.section1 h2 {
+.aboutTheMusicians__title {
   margin: 0;
   line-height: 2.2em;
 }
 
-.section1__container img {
+.aboutTheMusicians__image {
   width: 100%;
 }
 
-.section1__container h3 {
+.aboutTheMusicians__subtitle {
   margin-top: 1.5rem;
   line-height: 1.5em;
 }
 
-.section3 {
+.photoGallegry {
   padding-bottom: 1.6em;
-  background-color: #e1e1e1;
 }
 
-.section3 h2 {
+.photoGallegry__title {
   padding-bottom: 0.5rem;
 }
 
-.section3__images img {
+.photoGallegry__image {
   padding: 0.3rem 0;
   width: 100%;
 }
 
-.section4 {
+.joinTheConversation {
   margin-bottom: 1.6em;
   width: 100%;
   display: -webkit-box;
@@ -390,18 +389,18 @@ label {
           box-sizing: border-box;
 }
 
-.section4--title {
+.joinTheConversation__title {
   line-height: 1em;
 }
 
-.section4--newComment {
+.joinTheConversation__newComment {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.section4--userPicture {
+.joinTheConversation__userPicture {
   justify-items: flex-start;
   height: 3.1em;
   width: 3.4em;
@@ -409,11 +408,11 @@ label {
   border-radius: 50%;
 }
 
-.section4--userPicture1 {
+.joinTheConversation__userPicture--1 {
   margin-top: 2.7em;
 }
 
-.section4__form {
+.joinTheConversation__form {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -422,13 +421,13 @@ label {
   display: flex;
 }
 
-.section4__form--list {
+.joinTheConversation__form--list {
   width: 100%;
   padding-left: 5%;
   list-style: none;
 }
 
-.section4__form--label {
+.joinTheConversation__form--label {
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -440,11 +439,11 @@ label {
   color: #afafaf;
 }
 
-.section4__form--item2 {
+.joinTheConversation__form--item2 {
   margin: 1.5em 0;
 }
 
-.section4__form--input {
+.joinTheConversation__form--input {
   padding: 0.7em;
   width: 91%;
   border-radius: 0.4em;
@@ -453,36 +452,36 @@ label {
   background-color: #fafafa;
 }
 
-.section4__form--input:active {
+.joinTheConversation__form--input:active {
   border-color: #323232;
 }
 
-.section4__form--input:invalid {
+.joinTheConversation__form--input:invalid {
   border-color: #d22d2d;
 }
 
-.section4__form--input::-webkit-input-placeholder {
+.joinTheConversation__form--input::-webkit-input-placeholder {
   color: #323232;
 }
 
-.section4__form--input:-ms-input-placeholder {
+.joinTheConversation__form--input:-ms-input-placeholder {
   color: #323232;
 }
 
-.section4__form--input::-ms-input-placeholder {
+.joinTheConversation__form--input::-ms-input-placeholder {
   color: #323232;
 }
 
-.section4__form--input::placeholder {
+.joinTheConversation__form--input::placeholder {
   color: #323232;
 }
 
-.section4__form--comment {
+.joinTheConversation__form--comment {
   min-height: 3.6em;
   height: 6em;
 }
 
-.section4--button {
+.joinTheConversation__button {
   height: 4em;
   border-radius: 0.4em;
   border: none;
@@ -493,30 +492,30 @@ label {
       align-self: flex-end;
 }
 
-.section4--button:hover {
+.joinTheConversation__button:hover {
   background-color: #000000;
 }
 
-.section4__comments {
+.joinTheConversation__comments {
   margin-top: 2.4em;
   border-top: 0.1em solid #e1e1e1;
 }
 
-.section4__comment {
+.joinTheConversation__comment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-bottom: 0.1em solid #e1e1e1;
 }
 
-.section4__comment--box {
+.joinTheConversation__comment--box {
   padding-left: 1.6em;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-.section4__comment--titles {
+.joinTheConversation__comment--titles {
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -529,20 +528,20 @@ label {
           align-items: center;
 }
 
-.section4__comment--name {
+.joinTheConversation__comment--name {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-.section4__comment--date {
+.joinTheConversation__comment--date {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   color: #afafaf;
 }
 
-.section4__comment--paragraph {
+.joinTheConversation__comment--paragraph {
   margin-top: 0;
   line-height: 1.5em;
 }
@@ -557,44 +556,52 @@ label {
   .header__title {
     top: 0%;
   }
-  .section1__container {
+  .aboutTheMusicians__title {
+    margin-top: 0;
+    line-height: 1.4em;
+    font-family: "demi";
+  }
+  .aboutTheMusicians__container {
     width: 83%;
     margin: auto;
   }
-  .section1 h3 {
+  .aboutTheMusicians__subtitle {
     line-height: 1.5em;
     font-size: 2.2em;
   }
-  .section1 h3:last-child {
+  .aboutTheMusicians__subtitle:last-child {
     margin-top: 0.5em;
     font-family: "regular";
     font-size: 1.5em;
   }
-  .section2 {
+  .theBeesKnees {
     width: 75%;
     margin: auto;
     margin-bottom: 2em;
   }
-  .section2 h3 {
+  .theBeesKnees__title {
     line-height: 2.2em;
   }
-  .section2 div {
+  .theBeesKnees__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .section2 div p {
+  .theBeesKnees__paragraph {
     line-height: 1.5em;
   }
-  .section2 div p:first-child {
+  .theBeesKnees__paragraph:first-child {
     margin-right: 2.1em;
   }
-  .section3 {
+  .photoGallegry {
     margin-top: 1.6em;
     padding-top: 0;
-    background-color: #e1e1e1;
   }
-  .section3 div {
+  .photoGallegry__title {
+    line-height: 2.4em;
+    font-family: "regular";
+  }
+  .photoGallegry__images {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -603,22 +610,18 @@ label {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .section3 div img {
+  .photoGallegry__image {
     padding-bottom: 1.6em;
     width: 30%;
   }
-  .section3 h2 {
-    line-height: 2.4em;
-    font-family: "regular";
-  }
-  .section4--title {
+  .joinTheConversation__title {
     font-family: "demi";
   }
-  .section4--userPicture {
+  .joinTheConversation__userPicture {
     height: 5.1em;
     width: 5.4em;
   }
-  .section4--button {
+  .joinTheConversation__button {
     height: 2.5em;
     width: 23%;
     font-family: "regular";
@@ -629,35 +632,35 @@ label {
   .header h1 {
     top: 22%;
   }
-  .section1 div img {
+  .aboutTheMusicians__image {
     margin-bottom: 3.5rem;
   }
-  .section1 div h3 {
+  .aboutTheMusicians__subtitle {
     width: 81%;
     font-size: 2.7em;
   }
-  .section1 div h3:last-child {
+  .aboutTheMusicians__subtitle:last-child {
     font-family: "demi";
     font-size: 2em;
   }
-  .section2 {
+  .theBeesKnees {
     margin-bottom: 4em;
     width: 78%;
   }
-  .section2 h3 {
+  .theBeesKnees__title {
     font-size: 3.4em;
   }
-  .section2 div p {
+  .theBeesKnees__paragraph {
     font-size: 1.62em;
   }
-  .section3 {
+  .photoGallegry {
     padding-top: 4.8em;
   }
-  .section3 h2 {
+  .photoGallegry__title {
     font-size: 5.6em;
     font-family: "demi";
   }
-  .section3 div img {
+  .photoGallegry__image {
     padding-bottom: 3.6em;
   }
 }

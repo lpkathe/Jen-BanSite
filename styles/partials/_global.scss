@@ -80,14 +80,19 @@ label {
 .footer {
   padding-bottom: 2%;
 
+  & article {
+    padding: 0;
+  }
+
   &__icons {
     width: 43%;
     @include center;
     justify-content: space-between;
   }
 
-  & div p {
+  &__text p {
     margin-bottom: 0;
+    line-height: 1.5em;
 
     &:nth-child(even) {
       margin-top: 0;
