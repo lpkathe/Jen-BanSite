@@ -397,6 +397,7 @@ label {
 }
 
 .joinTheConversation__userPicture {
+  margin: 1.4em 0;
   justify-items: flex-start;
   height: 3.1em;
   width: 3.4em;
@@ -506,9 +507,7 @@ label {
 
 .joinTheConversation__comment--box {
   padding-left: 1.6em;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
 }
 
 .joinTheConversation__comment--titles {

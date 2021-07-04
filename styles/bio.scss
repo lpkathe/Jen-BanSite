@@ -76,6 +76,7 @@
   }
 
   &__userPicture {
+    margin: 1.4em 0;
     justify-items: flex-start;
     @include avatar;
 
@@ -154,7 +155,7 @@
 
     &--box {
       padding-left: 1.6em;
-      width: fit-content;
+      width: 100%;
     }
 
     &--titles {
