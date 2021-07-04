@@ -1,6 +1,6 @@
 const formButton = document.querySelector(".joinTheConversation__button");
 
-function captureValues() {
+function captureValues(event) {
   event.preventDefault();
 
   const commentsContainer = document.querySelector(".joinTheConversation__comments");
