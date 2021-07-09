@@ -43,11 +43,11 @@ function onLoad(event) {
         const [title, value] = entry;
 
         const titleElement = document.createElement("label");
-        titleElement.className = "shows__titles";
+        titleElement.classList = "shows__titles";
         titleElement.innerText = title;
 
         const valueElement = document.createElement("p");
-        valueElement.className = "shows__value";
+        valueElement.classList = "shows__value";
         valueElement.innerText = value;
 
         showDiv.appendChild(titleElement);
@@ -55,13 +55,13 @@ function onLoad(event) {
       });
 
       const buttonElement = document.createElement("button");
-      buttonElement.className = "shows__button";
+      buttonElement.classList = "shows__button";
       buttonElement.innerText = "BUY TICKETS";
       buttonElement.onclick = function () {
         console.log("Button" + index + "Clicked!");
       }
       const lineElement = document.createElement("hr");
-      lineElement.className = "line";
+      lineElement.classList = "line";
 
       showDiv.appendChild(buttonElement);
       showDiv.appendChild(lineElement);
@@ -73,9 +73,9 @@ function onLoad(event) {
 
     Object.keys(shows[0]).forEach(title => {
       const titleElement = document.createElement("label");
-      titleElement.className = "shows__titles";
+      titleElement.classList = "shows__titles";
       titleElement.innerText = title;
-      titlesDiv.className = "shows__group shows__group--1";
+      titlesDiv.classList = "shows__group shows__group--1";
       titlesDiv.appendChild(titleElement);
     });
     showsList.appendChild(titlesDiv);
@@ -85,22 +85,22 @@ function onLoad(event) {
 
       Object.entries(data).forEach(entry => {
         const valueElement = document.createElement("p");
-        valueElement.className = "shows__value";
+        valueElement.classList = "shows__value";
         valueElement.innerText = entry[1];
 
         showDiv.appendChild(valueElement);
-        showDiv.className = "shows__group";
+        showDiv.classList = "shows__group";
         showsList.appendChild(showDiv);
       });
 
       const buttonElement = document.createElement("button");
-      buttonElement.className = "shows__button";
+      buttonElement.classList = "shows__button";
       buttonElement.innerText = "BUY TICKETS";
       buttonElement.onclick = function () {
         console.log("Button" + index + "Clicked!");
       }
       const lineElement = document.createElement("hr");
-      lineElement.className = "line";
+      lineElement.classList = "line";
 
       showDiv.appendChild(buttonElement);
       showsList.appendChild(lineElement);

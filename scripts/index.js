@@ -24,20 +24,20 @@ function captureValues(event) {
   if (userPicture != "") {
     const userImg = document.createElement("img");
     userImg.setAttribute("src", userPicture);
-    userImg.className = "joinTheConversation__userPicture";
+    userImg.classList = "joinTheConversation__userPicture";
     userForm.appendChild(userImg);
   } else {
     const userImg = document.createElement("p");
-    userImg.className = "joinTheConversation__userPicture";
+    userImg.classList = "joinTheConversation__userPicture";
     userForm.appendChild(userImg);
   }
 
-  userForm.className = "joinTheConversation__comment";
-  commentBox.className = "joinTheConversation__comment--box";
-  commentTitles.className = "joinTheConversation__comment--titles";
-  userName.className = "joinTheConversation__comment--name";
-  userDate.className = "joinTheConversation__comment--date";
-  comment.className = "joinTheConversation__comment--paragraph";
+  userForm.classList = "joinTheConversation__comment";
+  commentBox.classList = "joinTheConversation__comment--box";
+  commentTitles.classList = "joinTheConversation__comment--titles";
+  userName.classList = "joinTheConversation__comment--name";
+  userDate.classList = "joinTheConversation__comment--date";
+  comment.classList = "joinTheConversation__comment--paragraph";
 
   commentsContainer.insertBefore(userForm, firstChildContainer);
   userForm.appendChild(commentBox);
