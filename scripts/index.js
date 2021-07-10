@@ -1,53 +1,102 @@
-const formButton = document.querySelector(".joinTheConversation__button");
 
-function captureValues(event) {
+const apiUrl = 'https://project-1-api.herokuapp.com';
+
+const createCommentForm = document.forms["createCommentForm"];
+const commentsGroup = document.querySelector(".joinTheConversation__comments");
+
+//add an event listener to the form submission
+createCommentForm.addEventListener("submit", handleSubmit);
+
+// Register to Heroku
+const apiKey = () => {
+  axios
+    .get(`${apiUrl}/register`)
+    .then((response) => {
+      console.log(response);
+      response.data.api_key
+    })
+    .catch((error) => console.log('error getting apikey'));
+};
+
+// Get comment list.
+const getAllComments = () => {
+  axios
+    .get(`${apiUrl}/comments?api_key=${apiKey}`)
+    .then((response) => {
+      const commentsArray = response.data;
+      commentsArray.forEach((comment) => {
+        addComment(comment);
+      });
+    })
+    .catch((error) => console.log('error getting comments:' + error));
+};
+
+// Handle Submit event
+function handleSubmit(event) {
   event.preventDefault();
+  const newComment = {
+    name: createCommentForm["userName"].value, 
+    comment: createCommentForm["comment"].value
+  };
 
-  const commentsContainer = document.querySelector(".joinTheConversation__comments");
-  const firstChildContainer = commentsContainer.firstChild;
-  const userPicture = document.querySelector(".joinTheConversation__userPicture").src;
-  const formName = document.querySelector(".joinTheConversation__form--input1").value;
-  const formComment = document.querySelector(".joinTheConversation__form--comment").value;
+  axios
+    .post(`${apiUrl}/comments?api_key=${apiKey}`, newComment, {
+      headers: {
+        'Content-Type': 'application/json',
+      }
+    }
+    )
+    .then((response) => {
+      console.log('HTTP STATUS CODE: ', response.status);
 
-  const userForm = document.createElement("div");
-  const commentBox = document.createElement("div");
-  const commentTitles = document.createElement("div");
-  const userName = document.createElement("h3");
-  const userDate = document.createElement("p");
-  const comment = document.createElement("p");
-
-  userName.innerText = formName;
-  const date = new Date();
-  userDate.innerText = date.toLocaleDateString();
-  comment.innerText = formComment;
-
-  if (userPicture != "") {
-    const userImg = document.createElement("img");
-    userImg.setAttribute("src", userPicture);
-    userImg.classList = "joinTheConversation__userPicture";
-    userForm.appendChild(userImg);
-  } else {
-    const userImg = document.createElement("p");
-    userImg.classList = "joinTheConversation__userPicture";
-    userForm.appendChild(userImg);
-  }
-
-  userForm.classList = "joinTheConversation__comment";
-  commentBox.classList = "joinTheConversation__comment--box";
-  commentTitles.classList = "joinTheConversation__comment--titles";
-  userName.classList = "joinTheConversation__comment--name";
-  userDate.classList = "joinTheConversation__comment--date";
-  comment.classList = "joinTheConversation__comment--paragraph";
-
-  commentsContainer.insertBefore(userForm, firstChildContainer);
-  userForm.appendChild(commentBox);
-  commentBox.appendChild(commentTitles);
-  commentTitles.appendChild(userName);
-  commentTitles.appendChild(userDate);
-  commentBox.appendChild(comment);
-
-  const form = document.querySelector(".joinTheConversation__form");
-  form.reset();
+      //after comment has posted, getComments again.
+      getAllComments();
+    })
+    .catch((error) => console.log(error));
+    
+  createCommentForm.reset();
 }
 
-formButton.addEventListener("click", captureValues);
+// Create a single comment.
+function addComment(comment) {
+
+  // create new elements
+  const container = document.createElement('div');
+  container.classList.add("joinTheConversation__comment");
+
+  const image = document.createElement('p');
+  image.classList.add("joinTheConversation__userPicture");
+
+  const commentBox = document.createElement('div');
+  commentBox.classList.add("joinTheConversation__comment--box");
+
+  const commentTitles = document.createElement('div');
+  commentTitles.classList.add("joinTheConversation__comment--titles");
+
+  const userName = document.createElement('h3');
+  userName.classList.add("joinTheConversation__comment--name");
+  userName.innerText = comment.name;
+
+  const date = new Date(comment.timestamp);
+  const userDates = document.createElement('p');
+  userDates.className = "joinTheConversation__comment--date";
+  userDates.innerText = date.toLocaleDateString();
+
+  commentTitles.appendChild(userName);
+  commentTitles.appendChild(userDates);
+
+  const userComment = document.createElement('p');
+  userComment.classList.add("joinTheConversation__comment--paragraph");
+  userComment.innerText = comment.comment;
+
+  commentBox.appendChild(commentTitles);
+  commentBox.appendChild(userComment);
+
+  container.appendChild(image);
+  container.appendChild(commentBox);
+
+  commentsGroup.insertBefore(container, commentsGroup.firstChild);
+}
+
+//initial call to get comments when first loaded.
+getAllComments();

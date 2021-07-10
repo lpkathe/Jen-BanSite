@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <link rel="stylesheet" href="./styles/bio.css">
   <title>BandSite</title>
 </head>
@@ -81,24 +82,24 @@
       <div class="joinTheConversation__newComment">
         <img class="joinTheConversation__userPicture joinTheConversation__userPicture--1" src="./assets/Images/Mohan-muruge.jpg"
           alt="User Picture">
-        <form class="joinTheConversation__form">
+        <form name="createCommentForm" class="joinTheConversation__form" method="post">
           <ul class="joinTheConversation__form--list">
             <li>
-              <label class="joinTheConversation__form--label">NAME<input class="joinTheConversation__form--input joinTheConversation__form--input1" type="text"
-                  placeholder="Enter your name"></label>
+              <label class="joinTheConversation__form--label">NAME<input class="joinTheConversation__form--input joinTheConversation__form--input1" name="userName" type="text"
+                  placeholder="Enter your name" required></label>
             </li>
             <li class="joinTheConversation__form--item2">
-              <label class="joinTheConversation__form--label">COMMENT<textarea
+              <label class="joinTheConversation__form--label">COMMENT<textarea name="comment"
                   class="joinTheConversation__form--input joinTheConversation__form--comment"
-                  placeholder="Add a new comment"></textarea></label>
+                  placeholder="Add a new comment" required></textarea></label>
             </li>
           </ul>
+          <input class="joinTheConversation__button" type="submit" value="COMMENT"/>
         </form>
       </div>
-      <button class="joinTheConversation__button">COMMENT</button>
 
       <div class="joinTheConversation__comments">
-        <div class="joinTheConversation__comment">
+<!--         <div class="joinTheConversation__comment">
           <p class="joinTheConversation__userPicture"></p>
           <div class="joinTheConversation__comment--box">
             <div class="joinTheConversation__comment--titles">
@@ -145,7 +146,7 @@
               Can't
               get enough.</p>
           </div>
-        </div>
+        </div> -->
       </div>
     </article>
 
