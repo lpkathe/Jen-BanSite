@@ -31,6 +31,42 @@ const getAllComments = () => {
     .catch((error) => console.log('error getting comments:' + error));
 };
 
+//Like implementation for comments.
+function likeComment(id) {
+  if (id === undefined || id === "") {
+    console.log("comment id to like not defined");
+    return;
+  }
+  axios
+      .put(`${apiUrl}/comments/${id}/like?api_key=${apiKey}`)
+      .then((response) => {
+        if (response.status === 200) {
+          document.getElementById(id).querySelector(".joinTheConversation__buttons--counter").innerText = response.data.likes + " Likes";
+        } else {
+          console.log(`Error trying to like commentId: ${id} status:${response.status} - ${response}`);
+        }
+      })
+      .catch((error) => console.log(`error for like comment ${id}:` + error));
+}
+
+//Remove single comment by a given Id.
+function removeComment(id) {
+  if (id === undefined || id === "") {
+    console.log("comment id to remove not defined");
+    return;
+  }
+  axios
+    .delete(`${apiUrl}/comments/${id}?api_key=${apiKey}`)
+    .then((response) => {
+      if (response.status === 200) {
+        document.getElementById(id).remove();
+      } else {
+        console.log(`Error removing commentId: ${id} status:${response.status} - ${response}`);
+      }
+    })
+    .catch((error) => console.log(`error for like comment ${id}:` + error));
+}
+
 // Handle Submit event
 function handleSubmit(event) {
   event.preventDefault();
@@ -62,6 +98,7 @@ function addComment(comment) {
 
   // create new elements
   const container = document.createElement('div');
+  container.id = comment.id;
   container.classList.add("joinTheConversation__comment");
 
   const image = document.createElement('p');
@@ -79,7 +116,7 @@ function addComment(comment) {
 
   const date = new Date(comment.timestamp);
   const userDates = document.createElement('p');
-  userDates.className = "joinTheConversation__comment--date";
+  userDates.classList.add("joinTheConversation__comment--date");
   userDates.innerText = date.toLocaleDateString();
 
   commentTitles.appendChild(userName);
@@ -94,6 +131,34 @@ function addComment(comment) {
 
   container.appendChild(image);
   container.appendChild(commentBox);
+
+  const commentButtons = document.createElement('div');
+  commentButtons.classList.add("joinTheConversation__buttons");
+
+  const commentLike = document.createElement('img');
+  commentLike.classList.add("joinTheConversation__buttons--likes");
+  commentLike.setAttribute("src", "assets/Icons/SVG/icon-like.svg");
+
+  const likeCounter = document.createElement("p");
+  likeCounter.classList.add("joinTheConversation__buttons--counter");
+  likeCounter.innerText = `${comment.likes} Likes`;
+
+  const commentDelete = document.createElement('button');
+  commentDelete.innerText = "Remove";
+  commentDelete.classList.add("joinTheConversation__buttons--remove");
+  commentDelete.addEventListener("click", (event) => {
+    removeComment(event.target.parentNode.parentNode.id);
+  });
+
+  commentLike.addEventListener("click", (event) => {
+    likeComment(event.target.parentNode.parentNode.id);
+  });
+
+  commentButtons.appendChild(commentLike);
+  commentButtons.appendChild(likeCounter);
+  commentButtons.appendChild(commentDelete);
+
+  container.appendChild(commentButtons);
 
   commentsGroup.insertBefore(container, commentsGroup.firstChild);
 }
