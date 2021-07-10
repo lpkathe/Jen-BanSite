@@ -38,15 +38,15 @@ function likeComment(id) {
     return;
   }
   axios
-      .put(`${apiUrl}/comments/${id}/like?api_key=${apiKey}`)
-      .then((response) => {
-        if (response.status === 200) {
-          document.getElementById(id).querySelector(".joinTheConversation__buttons--counter").innerText = response.data.likes + " Likes";
-        } else {
-          console.log(`Error trying to like commentId: ${id} status:${response.status} - ${response}`);
-        }
-      })
-      .catch((error) => console.log(`error for like comment ${id}:` + error));
+    .put(`${apiUrl}/comments/${id}/like?api_key=${apiKey}`)
+    .then((response) => {
+      if (response.status === 200) {
+        document.getElementById(id).querySelector(".joinTheConversation__buttons--counter").innerText = response.data.likes + " Likes";
+      } else {
+        console.log(`Error trying to like commentId: ${id} status:${response.status} - ${response}`);
+      }
+    })
+    .catch((error) => console.log(`error for like comment ${id}:` + error));
 }
 
 //Remove single comment by a given Id.
@@ -71,7 +71,7 @@ function removeComment(id) {
 function handleSubmit(event) {
   event.preventDefault();
   const newComment = {
-    name: createCommentForm["userName"].value, 
+    name: createCommentForm["userName"].value,
     comment: createCommentForm["comment"].value
   };
 
@@ -89,7 +89,7 @@ function handleSubmit(event) {
       getAllComments();
     })
     .catch((error) => console.log(error));
-    
+
   createCommentForm.reset();
 }
 
@@ -137,7 +137,7 @@ function addComment(comment) {
 
   const commentLike = document.createElement('img');
   commentLike.classList.add("joinTheConversation__buttons--likes");
-  commentLike.setAttribute("src", "assets/Icons/SVG/icon-like.svg");
+  commentLike.setAttribute("src", "../assets/Icons/icon-like.svg");
 
   const likeCounter = document.createElement("p");
   likeCounter.classList.add("joinTheConversation__buttons--counter");

@@ -140,6 +140,8 @@
     width: 95%;
     font-size: 1.5em;
     align-self: flex-end;
+    color: $primaryColor-3;
+    background-color: $primaryColor-1;
     @include buttonStyle;
   }
 
@@ -154,7 +156,7 @@
 
     &--box {
       padding-left: 1.6em;
-      width: 100%;
+      width: 70%;
     }
 
     &--titles {
@@ -180,17 +182,26 @@
   }
 
   &__buttons {
-    display: block;
+    margin-left: 0.5em;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     &--likes {
+      margin-top: 1em;
       width: 1.5em;
     }
 
     &--counter {
-      margin: 0 2em 0 1em;
+      margin-top: 0;
     }
 
-    &--delete {
+    &--remove {
+      width: 90%;
+      font-size: 0.5em;
+      font-family: "regular", Courier, monospace;
       @include buttonStyle;
     }
   }
@@ -348,6 +359,10 @@
       &--paragraph {
         font-size: 1.5em;
       }
+    }
+
+    &__buttons--remove {
+      font-size: 1em;
     }
   }
 }

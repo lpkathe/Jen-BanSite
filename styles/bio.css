@@ -487,6 +487,8 @@ label {
   font-size: 1.5em;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  color: #ffffff;
+  background-color: #323232;
   height: 4em;
   border-radius: 0.4em;
   border: none;
@@ -510,7 +512,7 @@ label {
 
 .joinTheConversation__comment--box {
   padding-left: 1.6em;
-  width: 100%;
+  width: 70%;
 }
 
 .joinTheConversation__comment--titles {
@@ -545,24 +547,42 @@ label {
 }
 
 .joinTheConversation__buttons {
-  display: block;
+  margin-left: 0.5em;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .joinTheConversation__buttons--likes {
+  margin-top: 1em;
   width: 1.5em;
 }
 
 .joinTheConversation__buttons--counter {
-  margin: 0 2em 0 1em;
+  margin-top: 0;
 }
 
-.joinTheConversation__buttons--delete {
+.joinTheConversation__buttons--remove {
+  width: 90%;
+  font-size: 0.5em;
+  font-family: "regular", Courier, monospace;
   height: 4em;
   border-radius: 0.4em;
   border: none;
 }
 
-.joinTheConversation__buttons--delete:hover {
+.joinTheConversation__buttons--remove:hover {
   background-color: #000000;
 }
 
@@ -688,6 +708,9 @@ label {
   }
   .joinTheConversation__comment--paragraph {
     font-size: 1.5em;
+  }
+  .joinTheConversation__buttons--remove {
+    font-size: 1em;
   }
 }
 
