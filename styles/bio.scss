@@ -178,6 +178,22 @@
       line-height: 1.5em;
     }
   }
+
+  &__buttons {
+    display: block;
+
+    &--likes {
+      width: 1.5em;
+    }
+
+    &--counter {
+      margin: 0 2em 0 1em;
+    }
+
+    &--delete {
+      @include buttonStyle;
+    }
+  }
 }
 
 // Tablet meria query
