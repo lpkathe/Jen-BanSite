@@ -1,18 +1,18 @@
 @font-face {
   font-family: "bold";
-  src: url(../../assets/Font/AvenirNextLTPro-Bold.otf) format("openType");
+  src: url(../assets/Font/AvenirNextLTPro-Bold.otf) format("openType");
   font-weight: 700;
 }
 
 @font-face {
   font-family: "demi";
-  src: url(../../assets/Font/AvenirNextLTPro-Demi.otf) format("openType");
+  src: url(../assets/Font/AvenirNextLTPro-Demi.otf) format("openType");
   font-weight: 600;
 }
 
 @font-face {
   font-family: "regular";
-  src: url(../../assets/Font/AvenirNextLTPro-Regular.otf) format("openType");
+  src: url(../assets/Font/AvenirNextLTPro-Regular.otf) format("openType");
   font-weight: 400;
 }
 
@@ -172,14 +172,14 @@ label {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .footer__text p {
@@ -212,8 +212,8 @@ label {
     padding-top: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -221,7 +221,7 @@ label {
   .nav__links {
     width: 30%;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   .nav__links li {
     width: -webkit-fit-content;
@@ -231,8 +231,8 @@ label {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .footer {
     display: -webkit-box;
@@ -240,8 +240,8 @@ label {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     position: relative;
   }
   .footer h2 {
@@ -265,8 +265,8 @@ label {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .footer p {
     line-height: 1.5em;
@@ -318,8 +318,8 @@ label {
 
 .header {
   width: auto;
-  color: #ffffff;
   position: relative;
+  color: #ffffff;
 }
 
 .header__image {
@@ -332,9 +332,9 @@ label {
   height: 100%;
   width: 100%;
   opacity: 50%;
-  background-color: #323232;
   position: absolute;
   z-index: 1;
+  background-color: #323232;
 }
 
 .header__title {
@@ -379,10 +379,10 @@ label {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .joinTheConversation__title {
@@ -416,10 +416,13 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .joinTheConversation__form--list {
-  width: 100%;
   padding-left: 5%;
   list-style: none;
 }
@@ -431,8 +434,8 @@ label {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   color: #afafaf;
 }
 
@@ -479,14 +482,14 @@ label {
 }
 
 .joinTheConversation__button {
+  height: 3em;
+  width: 95%;
+  font-size: 1.5em;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
   height: 4em;
   border-radius: 0.4em;
   border: none;
-  height: 3em;
-  width: 82%;
-  font-size: 1.5em;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
 }
 
 .joinTheConversation__button:hover {
@@ -516,11 +519,11 @@ label {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .joinTheConversation__comment--name {
@@ -607,10 +610,10 @@ label {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .photoGallegry__image {
     padding-bottom: 1.6em;
@@ -623,8 +626,8 @@ label {
     font-family: "demi";
   }
   .joinTheConversation__newComment {
-    padding: 0 3.6em;
     width: auto;
+    padding: 0 3.6em;
   }
   .joinTheConversation__userPicture {
     height: 3.6em;
@@ -644,7 +647,6 @@ label {
     padding-left: 3%;
   }
   .joinTheConversation__button {
-    margin-right: 2.6em;
     margin-bottom: 1.6em;
     height: 2.5em;
     width: 23%;
@@ -713,12 +715,11 @@ label {
   .joinTheConversation .joinTheConversation__comments {
     width: 50%;
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
   .joinTheConversation__button {
-    margin-right: 25%;
-    width: 15%;
+    width: 25%;
   }
   .joinTheConversation__comment--paragraph {
     padding: 0 1.2em 0 0;

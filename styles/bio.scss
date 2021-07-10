@@ -4,8 +4,8 @@
 
 .header {
   width: auto;
-  color: $primaryColor-3;
   position: relative;
+  color: $primaryColor-3;
 
   &__image {
     width: 100%;
@@ -17,9 +17,9 @@
     height: 100%;
     width: 100%;
     opacity: 50%;
-    background-color: $primaryColor-1;
     position: absolute;
     z-index: 1;
+    background-color: $primaryColor-1;
   }
 
   &__title {
@@ -90,10 +90,9 @@
     padding: 0;
     width: 100%;
     display: flex;
+    flex-direction: column;
 
     &--list {
-      width: 100%;
-
       padding-left: 5%;
       list-style: none;
     }
@@ -137,11 +136,11 @@
   }
 
   &__button {
-    @include buttonStyle;
     height: 3em;
-    width: 82%;
+    width: 95%;
     font-size: 1.5em;
     align-self: flex-end;
+    @include buttonStyle;
   }
 
   &__comments {
@@ -280,8 +279,8 @@
     }
 
     &__newComment {
-      padding: $horizontalPadding-tablet;
       width: auto;
+      padding: $horizontalPadding-tablet;
     }
 
     &__userPicture {
@@ -309,7 +308,6 @@
     }
 
     &__button {
-      margin-right: 2.6em;
       margin-bottom: 1.6em;
       height: 2.5em;
       width: 23%;
@@ -401,8 +399,7 @@
     }
 
     &__button {
-      margin-right: 25%;
-      width: 15%;
+      width: 25%;
     }
 
     &__comment--paragraph {
