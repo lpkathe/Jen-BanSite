@@ -481,6 +481,11 @@ label {
             align-items: center;
   }
   .shows__group--desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .shows__group--mobile {
     display: none;
   }
   .shows:not(:first-child) {
@@ -548,21 +553,13 @@ label {
         align-self: end;
   }
   .shows__title {
-    margin-left: 0;
+    margin-left: 4%;
   }
   .shows__button {
     margin-top: 0;
   }
   .shows__group {
     width: 160%;
-  }
-  .shows__group--desktop {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .shows__group--mobile {
-    display: none;
   }
   .shows__group:first-child {
     margin-bottom: 3%;

@@ -166,6 +166,10 @@
       align-items: center;
 
       &--desktop {
+        display: flex;
+      }
+
+      &--mobile {
         display: none;
       }
     }
@@ -238,7 +242,7 @@
     }
 
     &__title {
-      margin-left: 0;
+      margin-left: 4%;
     }
 
     &__button {
@@ -247,14 +251,6 @@
 
     &__group {
       width: 160%;
-
-      &--desktop {
-        display: flex;
-      }
-
-      &--mobile {
-        display: none;
-      }
 
       &:first-child {
         margin-bottom: 3%;
