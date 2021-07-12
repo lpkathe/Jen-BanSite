@@ -95,6 +95,10 @@
       background-color: $secondaryColor-1;
     }
   }
+
+  &__group--desktop {
+    display: none;
+  }
 }
 
 .line {
@@ -111,7 +115,7 @@
 @include tablet {
   .header {
     & iframe {
-      height: 12em;
+      height: 17em;
       width: 60%;
     }
     &__text {
@@ -125,7 +129,8 @@
       font-size: 2.7em;
 
       &--2 {
-        margin-top: 0.1em;
+        margin-top: 1em;
+        margin-bottom: 1.5em;
         width: 75%;
         font-size: 6em;
         font-family: "demi", Courier, monospace;
@@ -160,8 +165,8 @@
       display: inline-flex;
       align-items: center;
 
-      &--1 {
-        margin-bottom: 1em;
+      &--desktop {
+        display: none;
       }
     }
 
@@ -172,6 +177,7 @@
     &__button {
       width: 20%;
       font-family: "regular", Courier, monospace;
+      font-size: 1em;
     }
 
     &__value {
@@ -183,11 +189,6 @@
       margin: 0 1% 1% 0;
       width: 14em;
     }
-  }
-
-  .line {
-    margin: 3% 0;
-    width: 100%;
   }
 
   .footer {
@@ -232,31 +233,33 @@
 
     &__list {
       padding: 0 0 0 20em;
-      width: 100%;
+      width: fit-content;
       align-self: end;
     }
 
     &__title {
-      margin-left: 4%;
-    }
-
-    &__titles {
-      margin: 0 -2% 1% 0;
-      width: 17.3em;
+      margin-left: 0;
     }
 
     &__button {
       margin-top: 0;
     }
 
-    &__group:first-child {
-      margin-bottom: 3%;
-    }
-  }
+    &__group {
+      width: 160%;
 
-  .line {
-    margin: 2% 0;
-    width: 85%;
+      &--desktop {
+        display: flex;
+      }
+
+      &--mobile {
+        display: none;
+      }
+
+      &:first-child {
+        margin-bottom: 3%;
+      }
+    }
   }
 
   .footer {

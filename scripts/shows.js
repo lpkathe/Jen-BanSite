@@ -18,7 +18,6 @@ const loadShows = () => {
   axios
     .get(`${apiUrl}/showdates?api_key=${apiKey}`)
     .then((response) => {
-      console.log(response);
       if (response.status === 200) {
         addShowsLabels();
         response.data.forEach((record, index) => {
